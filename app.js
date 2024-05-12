@@ -8,7 +8,7 @@ import onewayRouter from './oneway/route'
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use('/api/v1/oneway', onewayRouter)
+app.use('/api/v1/indigo', onewayRouter)
 
 app.get('/', (req, res, next) => {
   res.send('Welcome to Indigo Api Integration');

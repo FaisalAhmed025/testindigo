@@ -11,13 +11,13 @@ const airSearch =async(req,res)=>{
   await onewayService.AirSearch(req,res)
 }
 
-const onewayResponse =async(req,res)=>{
-  await onewayService.onewayresponse(req,res)
+const RoundWayresponse =async(req,res)=>{
+  await onewayService.RoundWayresponse(req,res)
 }
 
 
 export const oneWayController = {
   Token,
   airSearch,
-  onewayResponse
+  RoundWayresponse
 }

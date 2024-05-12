@@ -4,8 +4,10 @@ import { oneWayController } from './controller'
 
 const router = express.Router()
 
-router.get('/token', oneWayController.Token )
-router.get('/airsearch', oneWayController.airSearch )
-router.get('/onewaresponse', oneWayController.onewayResponse )
+
+//oneway
+router.get('/oneway/token', oneWayController.Token )
+router.get('/oneway/airsearch', oneWayController.airSearch)
+router.get('/oneway/onewaresponse', oneWayController.RoundWayresponse )
 
 export default router;

@@ -6,153 +6,172 @@ import et from 'elementtree'
 import { Stream } from "stream";
 
 
-export const createToken  = async (req,res)=>{
+export const createToken = async (req, res) => {
   const targetBranch = 'P4218912';
   const CREDENTIALS = 'Universal API/uAPI4444837655-83fe5101:K/s3-5Sy4c';
   return res.send(Buffer.from(CREDENTIALS).toString('base64'));
 }
 
 
-const onewayresponse = (req, res) => {
+function attributeToObject(attributes) {
+  const attributesObject = {};
+  if (attributes) {
+    Object.entries(attributes).forEach(([key, value]) => {
+      if (value !== undefined && value !== null) {
+        attributesObject[key] = value;
+      }
+    });
+  }
+  return attributesObject;
+}
+
+function extractAlphabeticPart(inputString = "") {
+  // Check if inputString is null or undefined
+  if (inputString === null || inputString === undefined) {
+    return "BDT";
+  }
+
+  // Use regular expression to match alphabetic characters
+  const matchResult = inputString.match(/[A-Za-z]+/);
+
+  // Check if matchResult is not null and has at least one element
+  if (matchResult && matchResult.length > 0) {
+    // Return the first match found
+    return matchResult[0];
+  } else {
+    // Return an empty string if no alphabetic characters are found
+    return "BDT";
+  }
+}
+
+function extractNumberFromString(string) {
+  const number = string.match(/\d+/);
+  return number ? parseInt(number[0]) : 0;
+}
+
+
+function paxPriceMakers(paxPrice = {}) {
+
+  // console.log(paxPrice)
+  const tax = extractNumberFromString(paxPrice.ApproximateTaxes || "") || 0
+  const paxCount = paxPrice.paxCount || 1
+  const baseFare = extractNumberFromString(paxPrice.ApproximateBasePrice || "") || 0
+  const totalBaseFare = baseFare * paxCount
+  const totalTaxAmount = tax * paxCount
+  const fees = extractNumberFromString(paxPrice.ApproximateFees || paxPrice.Fees || "")
+  const totalperice = extractNumberFromString(paxPrice.ApproximateTotalPrice || "") || 0
+  return {
+    paxType: paxPrice.code || "",
+    paxCount,
+    currency: extractAlphabeticPart(paxPrice?.ApproximateTotalPrice || ""),
+    baseFare,
+    totalBaseFare,
+    tax,
+    totalTaxAmount,
+    totalAmount: totalperice,
+    discount: 0,
+    otherCharges: 0,
+    serviceFee: fees,
+  }
+}
+
+
+const RoundWayresponse = (req, res) => {
   const xmlData = fs.readFileSync('response.xml', 'utf8');
   const etree = et.parse(xmlData);
-  
-  const airPricingSolutions = etree.findall('.//air:AirPricingSolution');
 
-  airPricingSolutions.forEach(pricePoint => {
-    const attributes = pricePoint.attrib;
+  //airpricing Solution
+  const airPricingSolutions = etree.findall('./air:AirPricingSolution');
 
-    console.log(attributes)
+  const Flights = [];
+  airPricingSolutions.forEach(data => {
+    const key = data?.attrib?.Key || ""
+    const completeItinerary = data?.attrib?.CompleteItinerary
+    const totalPrice = data?.attrib?.TotalPrice
+    const basePrice = data?.attrib?.BasePrice
+    const approximateTotalPrice = data?.attrib?.ApproximateTotalPrice
+    const approximateBasePrice = data?.attrib?.ApproximateBasePrice
+    const taxes = data?.attrib?.Taxes
+    const approximateTaxes = data?.attrib?.ApproximateTaxes
 
-    //todo it should in the loop
-    const children = pricePoint._children
+    // Airpricing 
+    const pricingInfos = data.findall('.//air:AirPricingInfo');
+    const priceBreakDown = []
+    pricingInfos.forEach(info => {
+      const fareInfoRefsInInfo = info.findall('.//air:FareInfoRef');
+      const passengerTypes = info.findall('.//air:PassengerType');
+      const paxPrice = attributeToObject(info?.attrib)
 
-    const journeys = children.filter(element => element.tag === 'air:Journey');
-    const airPrices = children.filter(element => element.tag === 'air:AirPricingInfo');
-
-    // return res.send({journeys,airPrices})
-
-    //  const bookingInfoElements = airPrices._children.filter(element => element.tag === 'air:BookingInfo');
-
-
-    // const flatBookingInfo = airPricesMakers(airPrices)
-
-    //console.log(flatBookingInfo.passengerWithBookingCode)
-
-    // console.log(JSON.stringify(flatBookingInfo, null, 2));
-
-    journeys.forEach(child => {
-        const journey = {}
-
-        // counter++
-        console.log("children",child._children)
-        // journey.travelTime = convertDuration(child.attrib?.TravelTime) || null
-       const tarveltime =(child.attrib?.TravelTime)
-        journeys.push(child);
-        const airSegmentRefs = child._children.filter(element => element.tag === 'air:AirSegmentRef');
-
-        // console.log({airSegmentRefs} )
-        // console.dir( airSegmentRefs, {depth: true});
-        const airSegment = []
-        // airSegmentRefs.forEach((airSegmentRef) => {
-        //     const key = airSegmentRef.attrib?.Key
-        //     console.log("key", key)
-        //     const data = etree.find(`.//air:AirSegment[@Key='${key}']`, etree.namespaces);
-
-
-            //if (!data)  continue;
-
-        //     const ccdcdc = data?.attrib
-        //     let airAttributes = attributeToObject(data?.attrib);
-        //     //console.log(airAttributes)
-        //     //   console.log(key)
-        //     const mergedData = mergeBookingInfo(flatBookingInfo, key);
-
-        //     if (airAttributes) {
-        //         const flightDetailsRefElement = data._children?.find(element => element.tag === 'air:FlightDetailsRef');
-        //         const codeShareInfoElement =  getFlightDetailsRefs(data._children, 'air:CodeshareInfo');
-
-        //         //console.log({codeShareInfoElement})
-
-        //         const flightKey = flightDetailsRefElement?.attrib?.Key;
-
-        //         const {attrib = {}} = etree.find(`.//air:FlightDetailsList/air:FlightDetails[@Key='${flightKey}']`, etree.namespaces)
-
-        //         // console.log(attrib)
-
-        //         const segmentData = attributeToObject(attrib)
-
-        //         // console.log({segmentData})
-
-
-        //         // console.log(segmentData)
-        //         segmentData.SegmentRef = segmentData?.Key
-        //         delete segmentData?.Key
-        //         /*  if (attrib && 'Key' in attrib) {
-        //               delete attrib.Key;
-        //           }*/
-        //        // console.log(codeShareInfoElement[0], airAttributes.Key)
-        //         airAttributes = {
-        //             ...airAttributes, ...segmentData, ...mergedData, ...{
-        //                 OperatingCarrier: codeShareInfoElement[0]?.OperatingCarrier || airAttributes.Carrier,
-        //                 OperatingFlightNumber: codeShareInfoElement[0]?.OperatingFlightNumber || airAttributes.FlightNumber,
-        //             }
-        //         }
-
-
-        //         //  console.log(segmentDetails)
-
-        //     }
-
-        //     console.log(airAttributes)
-        //     const returnedData = {
-
-                
-        //     }
-
-        //     airSegment.push(airAttributes)
-
-        // })
-
-        // journey.segments = airSegment;
-
-        // journeysArray.push(journey)
-
-        return res.send({TravelTime:tarveltime})
+      const passengers = {}
+      passengerTypes.forEach((passenger, index) => {
+        passengers.code = passenger?.attrib.Code || null;
+        passengers.paxCount = index + 1;
+      })
+      paxPrice.code = passengers.code
+      paxPrice.paxCount = passengers.paxCount
+      const priceBreak = paxPriceMakers(paxPrice)
+      priceBreakDown.push(priceBreak)
     })
-})
-  
+
+
+    //AirBooking
+    const AIRBookingInfo = data.findall('.//air:BookingInfo')
+    const bookingInfo = []
+    AIRBookingInfo.forEach(data => {
+      const BookingCode = data?.attrib?.BookingCode
+      const BookingCount = data?.attrib?.BookingCount
+      const CabinClass = data?.attrib?.CabinClass
+      const FareInfoRef = data?.attrib?.FareInfoRef
+      const SegmentRef = data?.attrib?.SegmentRef
+      const HostTokenRef = data?.attrib?.HostTokenRef
+      bookingInfo.push({ BookingCode, BookingCount, CabinClass, FareInfoRef, SegmentRef, HostTokenRef })
+    })
+
+    const AirJournay = data.findall('.//air:Journey')
+    const airjournay =[]
+    console.log(AirJournay);
+
+
+    AirJournay.forEach(data =>{
+      const TravelTime = data?.attrib?.TravelTime
+      const AirSegmentRef = data.findall('.//air:AirSegmentRef')
+      const airsegemntkey = []
+      AirSegmentRef.forEach(data=>{
+        const key  = data?.attrib?.Key;
+        airsegemntkey.push({key})
+      })
+      airjournay.push({TravelTime,airsegemntkey})
+    })
+
+    Flights.push({ key, completeItinerary, totalPrice, basePrice, approximateTotalPrice, approximateBasePrice, taxes, approximateTaxes, airjournay, bookingInfo, priceBreakDown })
+  });
+
+  const segmentdata = etree.findall('./air:AirPricingSolution');
+
+  res.json({ Flights: Flights });
 };
 
 
 
 
-function getAttributes(node) {
-  const attributes = node.attributes;
-  const result = {};
-  for (let i = 0; i < attributes.length; i++) {
-    const attribute = attributes[i];
-    result[attribute.name] = attribute.value;
-  }
-  return result;
-}
 
 
-const AirSearch = async(req,res)=>{
 
-try {
-  const targetBranch = 'P4218912';
-  const CREDENTIALS = 'Universal API/uAPI4444837655-83fe5101:K/s3-5Sy4c';
-  const token = Buffer.from(CREDENTIALS).toString('base64')
-  console.log(token)
+const AirSearch = async (req, res) => {
 
-  const url = `https://apac.universal-api.travelport.com/B2BGateway/connect/uAPI/AirService`
-  const headers = {
-    'Authorization': `Basic {token}`,
-    'Content-Type': 'text/xml'
-  }
+  try {
+    const targetBranch = 'P4218912';
+    const CREDENTIALS = 'Universal API/uAPI4444837655-83fe5101:K/s3-5Sy4c';
+    const token = Buffer.from(CREDENTIALS).toString('base64')
+    console.log(token)
 
-  const requestbody =`<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    const url = `https://apac.universal-api.travelport.com/B2BGateway/connect/uAPI/AirService`
+    const headers = {
+      'Authorization': `Basic {token}`,
+      'Content-Type': 'text/xml'
+    }
+
+    const requestbody = `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
   <soapenv:Header />
   <soapenv:Body>
     <LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v52_0" TraceId="Fly-Far-Tech" TargetBranch="P4218912" ReturnUpsellFare="true" SolutionResult="true">
@@ -180,18 +199,18 @@ try {
 
 
 
-const [response] = await axios.post(url, requestbody, headers)
-return res.send({response})
-  
-} catch (error) {
-  console.log(error.response)
-  
-}
+    const [response] = await axios.post(url, requestbody, headers)
+    return res.send({ response })
+
+  } catch (error) {
+    console.log(error.response)
+
+  }
 
 }
 
-export const onewayService ={
+export const onewayService = {
   createToken,
   AirSearch,
-  onewayresponse
+  RoundWayresponse
 }
