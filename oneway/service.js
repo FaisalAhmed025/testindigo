@@ -83,7 +83,7 @@ const RoundWayresponse = (req, res) => {
   //airpricing Solution
   const airPricingSolutions = etree.findall('./air:AirPricingSolution');
 
-  const Flights = [];
+  const flightData = [];
   airPricingSolutions.forEach(data => {
     const key = data?.attrib?.Key || ""
     const completeItinerary = data?.attrib?.CompleteItinerary
@@ -129,7 +129,7 @@ const RoundWayresponse = (req, res) => {
 
     const AirJournay = data.findall('.//air:Journey')
     const airjournay =[]
-    console.log(AirJournay);
+    // console.log(AirJournay);
 
 
     AirJournay.forEach(data =>{
@@ -143,12 +143,10 @@ const RoundWayresponse = (req, res) => {
       airjournay.push({TravelTime,airsegemntkey})
     })
 
-    Flights.push({ key, completeItinerary, totalPrice, basePrice, approximateTotalPrice, approximateBasePrice, taxes, approximateTaxes, airjournay, bookingInfo, priceBreakDown })
+    flightData.push({ key, completeItinerary, totalPrice, basePrice, approximateTotalPrice, approximateBasePrice, taxes, approximateTaxes, airjournay, bookingInfo, priceBreakDown })
   });
 
-  const segmentdata = etree.findall('./air:AirPricingSolution');
-
-  res.json({ Flights: Flights });
+  res.json({ flightData: flightData });
 };
 
 

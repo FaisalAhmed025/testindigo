@@ -112,7 +112,7 @@
       <air:AirAvailInfo ProviderCode="ACH" />
       <air:FlightDetailsRef Key="3mcPf91FuDKA5JPvhHAAAA==" />
     </air:AirSegment>
-    <air:AirSegment Key="3mcPf91FuDKAu4OvhHAAAA==" Group="1" Carrier="6E" FlightNumber="1472" Origin="DXB" Destination="MAA" DepartureTime="2024-05-28T19:40:00.000+04:00" ArrivalTime="2024-05-29T01:25:00.000+05:30" FlightTime="255" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="3mcPf91FuDKA77RvhHAAAA==">
+    <air:AirSegment Key="3mcPf91FuDKAu4OvhHAAAA==" Group="1" Carrier="6E" FlightNumber="1472" Origin="DXB" Destination="MAA" DepartureTime="2024-05-28T19:40:00.000+04:00" ArrivalTime="2024-05-29T01:25:00.000+05:30" FlightTime="255" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="3mcPf91FuDKA77RvhHAAAA==" >
       <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1472">IndiGo</air:CodeshareInfo>
       <air:AirAvailInfo ProviderCode="ACH" />
       <air:FlightDetailsRef Key="3mcPf91FuDKAv4OvhHAAAA==" />
