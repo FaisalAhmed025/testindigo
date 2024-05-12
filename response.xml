@@ -1,0 +1,757 @@
+﻿<air:LowFareSearchRsp TraceId="Fly-Far-Tech" TransactionId="51CAFA6C0A0EE117205185BBF3C539F5" ResponseTime="1418" DistanceUnits="MI" CurrencyType="BDT" xmlns:air="http://www.travelport.com/schema/air_v52_0" xmlns:common_v52_0="http://www.travelport.com/schema/common_v52_0">
+  <common_v52_0:ResponseMessage Code="14004" Type="Warning" ProviderCode="ACH">NNS6E : IndiGo Error occured while doing MultiThreaded request processing-Error with multithreading.</common_v52_0:ResponseMessage>
+  <common_v52_0:ResponseMessage Code="14" Type="Warning" ProviderCode="ACH">6E is E-ticketable or Ticketless carrier</common_v52_0:ResponseMessage>
+  <common_v52_0:ResponseMessage Code="14" Type="Warning" ProviderCode="ACH">6E carrier may not support private fares modifiers</common_v52_0:ResponseMessage>
+  <common_v52_0:ResponseMessage Code="2023" Type="Warning" ProviderCode="ACH">Enhanced Flight Type indicator is not supported for the requested provider.</common_v52_0:ResponseMessage>
+  <air:FlightDetailsList>
+    <air:FlightDetails Key="Xhkxt7XEuDKAceWoeDBAAA==" Origin="DAC" Destination="MAA" DepartureTime="2024-05-21T18:15:00.000+06:00" ArrivalTime="2024-05-21T20:10:00.000+05:30" FlightTime="145" TravelTime="145" Equipment="320" DestinationTerminal="2" />
+    <air:FlightDetails Key="Xhkxt7XEuDKAeeWoeDBAAA==" Origin="MAA" Destination="DXB" DepartureTime="2024-05-22T06:10:00.000+05:30" ArrivalTime="2024-05-22T09:10:00.000+04:00" FlightTime="270" TravelTime="270" Equipment="321" OriginTerminal="2" DestinationTerminal="1" />
+    <air:FlightDetails Key="Xhkxt7XEuDKApeWoeDBAAA==" Origin="DAC" Destination="BOM" DepartureTime="2024-05-21T14:10:00.000+06:00" ArrivalTime="2024-05-21T16:40:00.000+05:30" FlightTime="180" TravelTime="180" Equipment="320" DestinationTerminal="2" />
+    <air:FlightDetails Key="Xhkxt7XEuDKAreWoeDBAAA==" Origin="BOM" Destination="DXB" DepartureTime="2024-05-21T19:20:00.000+05:30" ArrivalTime="2024-05-21T21:05:00.000+04:00" FlightTime="195" TravelTime="195" Equipment="320" OriginTerminal="2" DestinationTerminal="1" />
+    <air:FlightDetails Key="Xhkxt7XEuDKA8eWoeDBAAA==" Origin="BOM" Destination="DXB" DepartureTime="2024-05-22T02:15:00.000+05:30" ArrivalTime="2024-05-22T04:00:00.000+04:00" FlightTime="195" TravelTime="195" Equipment="320" OriginTerminal="2" DestinationTerminal="1" />
+    <air:FlightDetails Key="Xhkxt7XEuDKA1eWoeDBAAA==" Origin="BOM" Destination="DXB" DepartureTime="2024-05-22T15:10:00.000+05:30" ArrivalTime="2024-05-22T16:55:00.000+04:00" FlightTime="195" TravelTime="195" Equipment="320" OriginTerminal="2" DestinationTerminal="1" />
+    <air:FlightDetails Key="Xhkxt7XEuDKAHfWoeDBAAA==" Origin="DAC" Destination="DEL" DepartureTime="2024-05-21T16:25:00.000+06:00" ArrivalTime="2024-05-21T18:30:00.000+05:30" FlightTime="155" TravelTime="155" Equipment="321" DestinationTerminal="3" />
+    <air:FlightDetails Key="Xhkxt7XEuDKAJfWoeDBAAA==" Origin="DEL" Destination="DXB" DepartureTime="2024-05-22T08:40:00.000+05:30" ArrivalTime="2024-05-22T10:50:00.000+04:00" FlightTime="220" TravelTime="220" Equipment="320" OriginTerminal="3" DestinationTerminal="1" />
+    <air:FlightDetails Key="Xhkxt7XEuDKATfWoeDBAAA==" Origin="DEL" Destination="DXB" DepartureTime="2024-05-22T17:40:00.000+05:30" ArrivalTime="2024-05-22T19:50:00.000+04:00" FlightTime="220" TravelTime="220" Equipment="320" OriginTerminal="3" DestinationTerminal="1" />
+    <air:FlightDetails Key="Xhkxt7XEuDKAcfWoeDBAAA==" Origin="BOM" Destination="DXB" DepartureTime="2024-05-22T08:10:00.000+05:30" ArrivalTime="2024-05-22T09:40:00.000+04:00" FlightTime="180" TravelTime="180" Equipment="320" OriginTerminal="2" DestinationTerminal="1" />
+  </air:FlightDetailsList>
+  <air:AirSegmentList>
+    <air:AirSegment Key="Xhkxt7XEuDKAbeWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1114" Origin="DAC" Destination="MAA" DepartureTime="2024-05-21T18:15:00.000+06:00" ArrivalTime="2024-05-21T20:10:00.000+05:30" FlightTime="145" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1114">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKAceWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKAdeWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1471" Origin="MAA" Destination="DXB" DepartureTime="2024-05-22T06:10:00.000+05:30" ArrivalTime="2024-05-22T09:10:00.000+04:00" FlightTime="270" Equipment="321" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1471">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKAeeWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKAoeWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1116" Origin="DAC" Destination="BOM" DepartureTime="2024-05-21T14:10:00.000+06:00" ArrivalTime="2024-05-21T16:40:00.000+05:30" FlightTime="180" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1116">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKApeWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKAqeWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1455" Origin="BOM" Destination="DXB" DepartureTime="2024-05-21T19:20:00.000+05:30" ArrivalTime="2024-05-21T21:05:00.000+04:00" FlightTime="195" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1455">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKAreWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKA7eWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1511" Origin="BOM" Destination="DXB" DepartureTime="2024-05-22T02:15:00.000+05:30" ArrivalTime="2024-05-22T04:00:00.000+04:00" FlightTime="195" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1511">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKA8eWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKA0eWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1453" Origin="BOM" Destination="DXB" DepartureTime="2024-05-22T15:10:00.000+05:30" ArrivalTime="2024-05-22T16:55:00.000+04:00" FlightTime="195" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1453">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKA1eWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKAGfWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1104" Origin="DAC" Destination="DEL" DepartureTime="2024-05-21T16:25:00.000+06:00" ArrivalTime="2024-05-21T18:30:00.000+05:30" FlightTime="155" Equipment="321" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1104">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKAHfWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKAIfWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1461" Origin="DEL" Destination="DXB" DepartureTime="2024-05-22T08:40:00.000+05:30" ArrivalTime="2024-05-22T10:50:00.000+04:00" FlightTime="220" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1461">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKAJfWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKASfWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1463" Origin="DEL" Destination="DXB" DepartureTime="2024-05-22T17:40:00.000+05:30" ArrivalTime="2024-05-22T19:50:00.000+04:00" FlightTime="220" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1463">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKATfWoeDBAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="Xhkxt7XEuDKAbfWoeDBAAA==" Group="0" Carrier="6E" FlightNumber="1451" Origin="BOM" Destination="DXB" DepartureTime="2024-05-22T08:10:00.000+05:30" ArrivalTime="2024-05-22T09:40:00.000+04:00" FlightTime="180" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="Xhkxt7XEuDKA/iWoeDBAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1451">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="Xhkxt7XEuDKAcfWoeDBAAA==" />
+    </air:AirSegment>
+  </air:AirSegmentList>
+  <air:FareInfoList>
+    <air:FareInfo Key="Xhkxt7XEuDKAieWoeDBAAA==" FareBasis="JTS0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="MAA" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT25469.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAieWoeDBAAA==" ProviderCode="ACH">uuid-f3b871c2-a10f-4f5b-9bcc-78eb6b3f42af</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAjeWoeDBAAA==" FareBasis="PLS0INT" PassengerTypeCode="ADT" Origin="MAA" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAjeWoeDBAAA==" ProviderCode="ACH">uuid-a4e68d92-2355-4eb5-ac74-090afb1c559b</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAueWoeDBAAA==" FareBasis="J0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT29433.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAueWoeDBAAA==" ProviderCode="ACH">uuid-c54991d9-a829-4079-b6d5-770fd1cb4f14</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA2eWoeDBAAA==" FareBasis="LLS0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA2eWoeDBAAA==" ProviderCode="ACH">uuid-7d1b87ef-378f-4e01-aa89-2a91c0b23743</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA/eWoeDBAAA==" FareBasis="LLS0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA/eWoeDBAAA==" ProviderCode="ACH">uuid-0c9df91a-fcea-4fa7-8462-46b472ec35c3</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAxeWoeDBAAA==" FareBasis="LLS0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAxeWoeDBAAA==" ProviderCode="ACH">uuid-039ff1f3-f207-45cb-bf67-45b29d07a6d6</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAMfWoeDBAAA==" FareBasis="R0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="DEL" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT32461.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAMfWoeDBAAA==" ProviderCode="ACH">uuid-d77224c1-b977-4a9f-b5a3-d73be7922359</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAUfWoeDBAAA==" FareBasis="JL0INT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAUfWoeDBAAA==" ProviderCode="ACH">uuid-3c025395-13cd-49ca-8d87-57a82ab1b6f2</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAPfWoeDBAAA==" FareBasis="JL0INT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAPfWoeDBAAA==" ProviderCode="ACH">uuid-a80d19ee-4605-4f4d-8631-525fa7ddcf8e</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAffWoeDBAAA==" FareBasis="J0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT33226.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAffWoeDBAAA==" ProviderCode="ACH">uuid-75ae6424-c92d-4804-bcd1-120543ec4429</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAgfWoeDBAAA==" FareBasis="OLS0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAgfWoeDBAAA==" ProviderCode="ACH">uuid-e0b582ff-67c6-4e3b-b04b-88c2964aca2b</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAnfWoeDBAAA==" FareBasis="RCMINT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT33999.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAnfWoeDBAAA==" ProviderCode="ACH">uuid-7f0602b7-9a2c-4a68-87cf-ed503e1baa45</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAofWoeDBAAA==" FareBasis="RCMINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAofWoeDBAAA==" ProviderCode="ACH">uuid-c4155a1f-4564-4f5f-8cd3-48f2576eb547</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAvfWoeDBAAA==" FareBasis="RCUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT34393.00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAvfWoeDBAAA==" ProviderCode="ACH">uuid-548eb0de-1b13-4243-8e9f-3d81ced66c7f</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAwfWoeDBAAA==" FareBasis="RCUINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAwfWoeDBAAA==" ProviderCode="ACH">uuid-15ab1a4f-af38-4a06-a6a9-43edee48cd28</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA3fWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="DAC" Destination="DEL" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT37789.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA3fWoeDBAAA==" ProviderCode="ACH">uuid-2703a60f-9392-4886-a67a-2e1247e6a98e</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA9fWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA9fWoeDBAAA==" ProviderCode="ACH">uuid-be833d5d-e941-456a-91e0-7e3016d07148</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA6fWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA6fWoeDBAAA==" ProviderCode="ACH">uuid-3d58d33b-5211-49fe-9643-a0ea2bf331f1</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAGgWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="DAC" Destination="MAA" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT37789.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAGgWoeDBAAA==" ProviderCode="ACH">uuid-2e1f11b0-6f5c-4fff-a6af-2d40365f84b7</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAHgWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="MAA" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAHgWoeDBAAA==" ProviderCode="ACH">uuid-d7ec26d0-0325-43af-8863-97aacf805b10</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAOgWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT37789.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAOgWoeDBAAA==" ProviderCode="ACH">uuid-d8ee0144-45b9-4d6b-b247-f2b23ae882bb</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAUgWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAUgWoeDBAAA==" ProviderCode="ACH">uuid-fb3d0ca0-69e9-4500-bf7e-1073e21042b6</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKARgWoeDBAAA==" FareBasis="JCMINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKARgWoeDBAAA==" ProviderCode="ACH">uuid-7dbece9a-0f04-4eb1-9366-09629e41f4af</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAdgWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT38182.00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAdgWoeDBAAA==" ProviderCode="ACH">uuid-feb3e054-5539-474d-bba4-35fb65648b5a</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAjgWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAjgWoeDBAAA==" ProviderCode="ACH">uuid-d1ac54e9-8018-424e-a6f7-1c2a03379857</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAqgWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="MAA" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT38182.00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAqgWoeDBAAA==" ProviderCode="ACH">uuid-29b50055-e802-4eac-b628-f7f82cabf104</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKArgWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="MAA" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKArgWoeDBAAA==" ProviderCode="ACH">uuid-ec95ebac-a2c9-43b4-b27a-8fdb3206a28d</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAggWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAggWoeDBAAA==" ProviderCode="ACH">uuid-b3b51a64-bc77-46ff-afff-99c4460d880c</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA0gWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="DEL" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT38182.00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA0gWoeDBAAA==" ProviderCode="ACH">uuid-4e1cfa07-9cdc-45ea-804b-b3a1bb5d0074</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA6gWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA6gWoeDBAAA==" ProviderCode="ACH">uuid-d350c0a6-7d42-49b9-a72b-2006605580c7</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA3gWoeDBAAA==" FareBasis="JCUINT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA3gWoeDBAAA==" ProviderCode="ACH">uuid-fad01bd8-4c6f-4cd7-b895-e1bdc8b1bfac</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKADhWoeDBAAA==" FareBasis="REC0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT39638.00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKADhWoeDBAAA==" ProviderCode="ACH">uuid-7942647f-fe8e-4e39-a586-a64d03c69929</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAEhWoeDBAAA==" FareBasis="REC0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAEhWoeDBAAA==" ProviderCode="ACH">uuid-2ac5c603-bce6-452c-9773-a28e7bfeca7c</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKALhWoeDBAAA==" FareBasis="OCMINT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT41204.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKALhWoeDBAAA==" ProviderCode="ACH">uuid-21490eb1-5ee0-424a-a12c-726c8a062ce1</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAMhWoeDBAAA==" FareBasis="OCMINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAMhWoeDBAAA==" ProviderCode="ACH">uuid-d57786ea-f036-4806-b259-135011d8c1c1</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAThWoeDBAAA==" FareBasis="OCUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT41598.00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAThWoeDBAAA==" ProviderCode="ACH">uuid-dc7575bb-bcbb-4459-a70b-2379daad5430</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAUhWoeDBAAA==" FareBasis="OCUINT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Flexi Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAUhWoeDBAAA==" ProviderCode="ACH">uuid-d74c57a8-e73b-4141-9082-12144372eb36</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAbhWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT44738.00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAbhWoeDBAAA==" ProviderCode="ACH">uuid-c1120759-cd4e-48ba-a613-8ea657e2368e</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAhhWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAhhWoeDBAAA==" ProviderCode="ACH">uuid-a65a1da9-b40b-4533-a7fa-7cb54c973e3c</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAohWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="DEL" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT44738.00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAohWoeDBAAA==" ProviderCode="ACH">uuid-ac441b59-ba7c-4a62-acbe-d6a69cf3efcd</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAuhWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAuhWoeDBAAA==" ProviderCode="ACH">uuid-16409c7d-d604-4ae6-aa33-9438f3547220</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKArhWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="DEL" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKArhWoeDBAAA==" ProviderCode="ACH">uuid-de85cdca-d85c-4dfe-b2c0-5788b7f68a6a</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKAehWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKAehWoeDBAAA==" ProviderCode="ACH">uuid-4e3af613-bc4f-4d2b-b8f0-4ec992dc0eac</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA5hWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="MAA" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT44738.00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA5hWoeDBAAA==" ProviderCode="ACH">uuid-813bc343-dfbf-4136-bfa7-b290a65773e7</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKA6hWoeDBAAA==" FareBasis="JEC0INT" PassengerTypeCode="ADT" Origin="MAA" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKA6hWoeDBAAA==" ProviderCode="ACH">uuid-7d33d1bb-a668-40dc-b647-41face24dded</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKABiWoeDBAAA==" FareBasis="OEC0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="BOM" EffectiveDate="2024-05-07T12:43:29.000+06:00" Amount="BDT48154.00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKABiWoeDBAAA==" ProviderCode="ACH">uuid-73198c50-da35-4b2f-a3a9-25d8fe251746</air:FareRuleKey>
+    </air:FareInfo>
+    <air:FareInfo Key="Xhkxt7XEuDKACiWoeDBAAA==" FareBasis="OEC0INT" PassengerTypeCode="ADT" Origin="BOM" Destination="DXB" EffectiveDate="2024-05-07T12:43:29.000+06:00" PromotionalFare="false" FareFamily="Super 6E Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="Xhkxt7XEuDKACiWoeDBAAA==" ProviderCode="ACH">uuid-2c999363-8d01-4b8c-86bb-00481fcd1204</air:FareRuleKey>
+    </air:FareInfo>
+  </air:FareInfoList>
+  <air:HostTokenList>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAGiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:6a79a348-06e1-40c5-ba9c-6981ab19bc4b</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAHiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:e1b67477-5302-4263-a255-1746cc815473</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAIiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:4feb9c7f-c40f-4864-b011-90ebe7540487</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAJiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:e067e3c9-0711-4ee9-a303-f46c86c5ed79</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAKiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:5133221c-6d1e-4381-9772-bf79cf837444</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKALiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a2fa1dae-acc9-4ee8-990d-64e0ea02cf38</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAMiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:87daabb8-b26a-4e1b-9b5a-91e8b9dac6f6</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKANiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:2edab484-fb99-4242-8e77-f510cfa7c076</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAOiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a2dc6bad-19db-4dcf-8472-99564c348a82</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAPiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:9d002311-2f22-4b59-99de-1d47e2abfeb4</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAQiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:ded383f8-f90d-4311-961c-cdb84bd27d98</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKARiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:35873286-7d27-4d1b-b636-87b0c10a908c</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKASiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:df3fa99a-3610-474a-b4e7-3f1b4c74d0fd</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKATiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:9068a370-410f-414e-bb68-e64db82e7a5a</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAUiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a11364bb-1a08-4585-acf8-c7cd85248edb</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAViWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:5e849eca-3d5d-4dfb-9f38-e54f06000545</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAWiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:000b6219-26ce-4b74-aa6c-13373b36741b</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAXiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:9e4c7d9f-1b14-4ed1-b0fd-9d5ab35ca236</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAYiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:d705d7b0-e8c2-4d49-83df-f78cbc309f5e</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAZiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:830a5642-5df6-4800-8571-082a5a17004b</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAaiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:46465968-0b07-4bda-b219-95727377ba8e</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAbiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:90be36da-be81-4eb0-9a5f-3ab62d4809d0</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAciWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:9b2af7c0-a219-4cfc-aced-55948532b88b</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAdiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:4e4a6acb-35f5-47c7-bcae-2aa13474168b</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAeiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:92a36aa5-c623-4ce1-8ccc-5da7937bf9ec</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAfiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:6dbaaeb8-1bcb-4c34-865e-fec179463241</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAgiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a3216bbf-07a4-4495-b7ca-310dd3fb866e</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAhiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:09064a4b-a5ae-4634-a34e-ace2a5631c93</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAiiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:9a3565b8-ec8c-40c4-8802-90f2a897c81d</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAjiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:2e349253-577a-4541-b553-cb90f88fb661</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAkiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:bb28a7b6-467c-4671-b1eb-137953d8b531</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAliWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:209fe2df-de13-4cee-b44a-3cf5609283bc</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAmiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:303d1e1d-78fc-49bb-b839-1ac85319be65</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAniWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:0372c011-96db-4482-a8d0-afc3375f4a51</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAoiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:0b071d0b-cc12-432a-aab0-8c5ed7f27f3d</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKApiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:8ffac505-84f8-4569-8b67-d689f294a99e</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAqiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:e91da406-c066-4e66-a301-65b6bd4758b9</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAriWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:9999de2b-6c42-4570-801b-03de12485701</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAsiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:7448235b-1231-42ec-a7d2-407eb2dfaacf</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAtiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:b3ca578a-11cd-4c2b-bd7b-fa2165885cbf</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAuiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:fcf1674c-0559-4126-88eb-9d63cfbf01ee</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAviWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a345f7a2-b180-4a1e-843c-1946b325adb6</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAwiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:d6bcee4a-08b7-4213-ad17-eef814d67f8f</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAxiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:f6446361-aee0-438b-b0f6-e7e0107df2a6</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAyiWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a78cf9df-62ce-4d5f-8af9-0bcc9655e131</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKAziWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:73600dcf-b95c-44a3-aed7-7c6c0ae2c1bc</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA0iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:683fa6c5-a176-43a7-8949-15b3333a2ef0</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA1iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:9f68faf7-d246-43f6-a811-223f2445538c</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA2iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:66396f67-7e86-4740-a160-2c7ad4e32205</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA3iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:e15415d3-7638-4881-88c9-9481707b20d1</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA4iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:4c1a57cc-1d4b-483f-96c5-5e252c30509f</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA5iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:3c498c40-8f9c-4077-b7fb-492173f8d8a0</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA6iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:faee2d39-80d2-4f18-adb2-035ea96f9236</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA7iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:fb4ca879-e288-414e-b1e4-1be2329a10b4</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA8iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a67d1361-cf56-4366-9028-7ce74e427944</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="Xhkxt7XEuDKA9iWoeDBAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:04cafc80-032f-4c20-96fb-fc10d24bb8ae</common_v52_0:HostToken>
+  </air:HostTokenList>
+  <air:APISRequirementsList>
+    <air:APISRequirements Key="Xhkxt7XEuDKA/iWoeDBAAA==" Level="Supported">
+      <air:Document Sequence="1" Type="Passport" Level="Supported" />
+    </air:APISRequirements>
+  </air:APISRequirementsList>
+  <air:RouteList>
+    <air:Route Key="Xhkxt7XEuDKA+iWoeDBAAA==">
+      <air:Leg Key="Xhkxt7XEuDKAfeWoeDBAAA==" Group="0" Origin="DAC" Destination="DXB" />
+    </air:Route>
+  </air:RouteList>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAaeWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT34822.00" BasePrice="BDT25469.00" ApproximateTotalPrice="BDT34822.00" ApproximateBasePrice="BDT25469.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT16H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAdeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAgeWoeDBAAA==" TotalPrice="BDT34822.00" BasePrice="BDT25469.00" ApproximateTotalPrice="BDT34822.00" ApproximateBasePrice="BDT25469.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAieWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAjeWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="18" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAieWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA2iWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="18" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAjeWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAdeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA3iWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAheWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAmeWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAneWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT38786.00" BasePrice="BDT29433.00" ApproximateTotalPrice="BDT38786.00" ApproximateBasePrice="BDT29433.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT8H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAqeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAseWoeDBAAA==" TotalPrice="BDT38786.00" BasePrice="BDT29433.00" ApproximateTotalPrice="BDT38786.00" ApproximateBasePrice="BDT29433.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAueWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKA2eWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="4" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAueWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAGiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="4" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA2eWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAqeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAHiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAteWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA5eWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKA6eWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT38786.00" BasePrice="BDT29433.00" ApproximateTotalPrice="BDT38786.00" ApproximateBasePrice="BDT29433.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT15H50M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA7eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKA9eWoeDBAAA==" TotalPrice="BDT38786.00" BasePrice="BDT29433.00" ApproximateTotalPrice="BDT38786.00" ApproximateBasePrice="BDT29433.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAueWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKA/eWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="15" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAueWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAOiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="15" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA/eWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA7eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAPiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA+eWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKACfWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKADfWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT38786.00" BasePrice="BDT29433.00" ApproximateTotalPrice="BDT38786.00" ApproximateBasePrice="BDT29433.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT4H45M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA0eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAveWoeDBAAA==" TotalPrice="BDT38786.00" BasePrice="BDT29433.00" ApproximateTotalPrice="BDT38786.00" ApproximateBasePrice="BDT29433.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAueWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAxeWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAueWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAeiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAxeWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA0eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAfiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAweWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAEfWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAFfWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT41814.00" BasePrice="BDT32461.00" ApproximateTotalPrice="BDT41814.00" ApproximateBasePrice="BDT32461.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT20H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAIfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAKfWoeDBAAA==" TotalPrice="BDT41814.00" BasePrice="BDT32461.00" ApproximateTotalPrice="BDT41814.00" ApproximateBasePrice="BDT32461.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAMfWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAUfWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAMfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAmiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAUfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAIfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAniWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKALfWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAXfWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAYfWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT41814.00" BasePrice="BDT32461.00" ApproximateTotalPrice="BDT41814.00" ApproximateBasePrice="BDT32461.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT5H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKASfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKANfWoeDBAAA==" TotalPrice="BDT41814.00" BasePrice="BDT32461.00" ApproximateTotalPrice="BDT41814.00" ApproximateBasePrice="BDT32461.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAMfWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAPfWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAMfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAuiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAPfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKASfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAviWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAOfWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAZfWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAafWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT42579.00" BasePrice="BDT33226.00" ApproximateTotalPrice="BDT42579.00" ApproximateBasePrice="BDT33226.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT21H30M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAdfWoeDBAAA==" TotalPrice="BDT42579.00" BasePrice="BDT33226.00" ApproximateTotalPrice="BDT42579.00" ApproximateBasePrice="BDT33226.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAffWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAgfWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAffWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAWiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAgfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAXiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAefWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAjfWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAkfWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT43352.00" BasePrice="BDT33999.00" ApproximateTotalPrice="BDT43352.00" ApproximateBasePrice="BDT33999.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT8H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAqeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAlfWoeDBAAA==" TotalPrice="BDT43352.00" BasePrice="BDT33999.00" ApproximateTotalPrice="BDT43352.00" ApproximateBasePrice="BDT33999.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAnfWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAofWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="8" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAnfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAIiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="8" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAofWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAqeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAJiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAmfWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKArfWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAsfWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT43746.00" BasePrice="BDT34393.00" ApproximateTotalPrice="BDT43746.00" ApproximateBasePrice="BDT34393.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT8H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAqeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAtfWoeDBAAA==" TotalPrice="BDT43746.00" BasePrice="BDT34393.00" ApproximateTotalPrice="BDT43746.00" ApproximateBasePrice="BDT34393.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAvfWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAwfWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="8" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAvfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAKiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="8" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAwfWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAqeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKALiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAufWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAzfWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKA0fWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT20H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAIfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKA1fWoeDBAAA==" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKA3fWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKA9fWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA3fWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAoiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA9fWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAIfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKApiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA2fWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAAgWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKABgWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT5H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKASfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKA4fWoeDBAAA==" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKA3fWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKA6fWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA3fWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAwiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA6fWoeDBAAA==" SegmentRef="Xhkxt7XEuDKASfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAxiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA5fWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKACgWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKADgWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT16H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAdeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAEgWoeDBAAA==" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAGgWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAHgWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="33" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAGgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA4iWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="33" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAHgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAdeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA5iWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAFgWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAKgWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKALgWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT4H45M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA0eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAMgWoeDBAAA==" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAOgWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAUgWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="10" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAOgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAgiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="10" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAUgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA0eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAhiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKANgWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAXgWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAYgWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT15H50M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA7eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAPgWoeDBAAA==" TotalPrice="BDT47142.00" BasePrice="BDT37789.00" ApproximateTotalPrice="BDT47142.00" ApproximateBasePrice="BDT37789.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAOgWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKARgWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="20" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAOgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAQiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="20" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKARgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA7eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKARiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAQgWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAZgWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAagWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT15H50M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA7eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAbgWoeDBAAA==" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAdgWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAjgWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="20" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAdgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKASiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="20" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAjgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA7eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKATiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAcgWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAmgWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAngWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT16H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAdeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAogWoeDBAAA==" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAqgWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKArgWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="33" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAqgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA6iWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="33" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKArgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAdeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA7iWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKApgWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAugWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAvgWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT4H45M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA0eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAegWoeDBAAA==" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAdgWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAggWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="10" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAdgWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAiiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="10" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAggWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA0eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAjiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAfgWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAwgWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAxgWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT20H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAIfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAygWoeDBAAA==" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKA0gWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKA6gWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA0gWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAqiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA6gWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAIfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAriWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAzgWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA9gWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKA+gWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT5H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKASfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKA1gWoeDBAAA==" TotalPrice="BDT47535.00" BasePrice="BDT38182.00" ApproximateTotalPrice="BDT47535.00" ApproximateBasePrice="BDT38182.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKA0gWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKA3gWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA0gWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAyiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA3gWoeDBAAA==" SegmentRef="Xhkxt7XEuDKASfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAziWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA2gWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA/gWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAAhWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT48991.00" BasePrice="BDT39638.00" ApproximateTotalPrice="BDT48991.00" ApproximateBasePrice="BDT39638.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT8H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAqeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKABhWoeDBAAA==" TotalPrice="BDT48991.00" BasePrice="BDT39638.00" ApproximateTotalPrice="BDT48991.00" ApproximateBasePrice="BDT39638.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKADhWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAEhWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="8" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKADhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAMiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="8" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAEhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAqeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKANiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAChWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAHhWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAIhWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT50557.00" BasePrice="BDT41204.00" ApproximateTotalPrice="BDT50557.00" ApproximateBasePrice="BDT41204.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT21H30M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAJhWoeDBAAA==" TotalPrice="BDT50557.00" BasePrice="BDT41204.00" ApproximateTotalPrice="BDT50557.00" ApproximateBasePrice="BDT41204.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKALhWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAMhWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKALhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAYiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAMhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAZiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAKhWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAPhWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAQhWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT50951.00" BasePrice="BDT41598.00" ApproximateTotalPrice="BDT50951.00" ApproximateBasePrice="BDT41598.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT21H30M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKARhWoeDBAAA==" TotalPrice="BDT50951.00" BasePrice="BDT41598.00" ApproximateTotalPrice="BDT50951.00" ApproximateBasePrice="BDT41598.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAThWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAUhWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAThWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAaiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAUhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAbiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAShWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAXhWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAYhWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT4H45M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA0eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAZhWoeDBAAA==" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAbhWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAhhWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="10" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAbhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAkiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="10" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAhhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA0eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAliWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAahWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAkhWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAlhWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P1DT5H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKASfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAmhWoeDBAAA==" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAohWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAuhWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAohWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA0iWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="5" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAuhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKASfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA1iWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAnhWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAxhWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKAyhWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT20H25M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAGfWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAIfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAphWoeDBAAA==" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAohWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKArhWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAohWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAGfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAsiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="1" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKArhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAIfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAtiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAqhWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAzhWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKA0hWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT15H50M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKA7eWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKAchWoeDBAAA==" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKAbhWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKAehWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="20" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAbhWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAUiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="20" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKAehWoeDBAAA==" SegmentRef="Xhkxt7XEuDKA7eWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAViWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAdhWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA1hWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKA2hWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT16H55M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAdeWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKA3hWoeDBAAA==" TotalPrice="BDT54091.00" BasePrice="BDT44738.00" ApproximateTotalPrice="BDT54091.00" ApproximateBasePrice="BDT44738.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKA5hWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKA6hWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="33" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA5hWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA8iWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="33" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKA6hWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAdeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKA9iWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA4hWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKA9hWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="Xhkxt7XEuDKA+hWoeDBAAA==" CompleteItinerary="true" TotalPrice="BDT57507.00" BasePrice="BDT48154.00" ApproximateTotalPrice="BDT57507.00" ApproximateBasePrice="BDT48154.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00">
+    <air:Journey TravelTime="P0DT21H30M0S">
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAoeWoeDBAAA==" />
+      <air:AirSegmentRef Key="Xhkxt7XEuDKAbfWoeDBAAA==" />
+    </air:Journey>
+    <air:LegRef Key="Xhkxt7XEuDKAfeWoeDBAAA==" />
+    <air:AirPricingInfo Key="Xhkxt7XEuDKA/hWoeDBAAA==" TotalPrice="BDT57507.00" BasePrice="BDT48154.00" ApproximateTotalPrice="BDT57507.00" ApproximateBasePrice="BDT48154.00" Taxes="BDT9353.00" ApproximateTaxes="BDT9353.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="Xhkxt7XEuDKABiWoeDBAAA==" />
+      <air:FareInfoRef Key="Xhkxt7XEuDKACiWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKABiWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAoeWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAciWoeDBAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="7" CabinClass="Economy" FareInfoRef="Xhkxt7XEuDKACiWoeDBAAA==" SegmentRef="Xhkxt7XEuDKAbfWoeDBAAA==" HostTokenRef="Xhkxt7XEuDKAdiWoeDBAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAAiWoeDBAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:Connection SegmentIndex="0" />
+    <air:TaxInfo Category="BD" Amount="BDT9353.00" Key="Xhkxt7XEuDKAFiWoeDBAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+</air:LowFareSearchRsp>
