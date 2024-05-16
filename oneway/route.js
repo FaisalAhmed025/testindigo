@@ -4,7 +4,6 @@ import { oneWayController } from './controller'
 
 const router = express.Router()
 
-
 //oneway
 router.get('/oneway/token', oneWayController.Token )
 router.get('/oneway/airsearch', oneWayController.airSearch)

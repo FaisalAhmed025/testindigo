@@ -157,7 +157,6 @@ function extractRoutes(routes = []) {
 
     const routeList = []
 
-
     routes.forEach(route => {
         const children = route?._children || [];
         children.forEach(child => {
@@ -206,8 +205,8 @@ const formatTime = (time = "") => {
 };
 
 function extractNumberFromString(string = "") {
-    const number = string.match(/\d+/);
-    return number ? parseInt(number[0]) : 0;
+  const number = string.match(/-?\d+/);
+  return number ? parseInt(number[0]) : 0;
 }
 
 function extractBaggageWeights(baggageAllowance = []) {
@@ -274,7 +273,6 @@ function brandMaker(brandAttribute = {}) {
 
 function featuredMaker(fareBrandAttribute = {}) {
     // console.log( fareBrandAttribute)
-
     return {
 
         fareBasis: fareBrandAttribute?.FareBasis || "",
@@ -294,7 +292,6 @@ function featuredMaker(fareBrandAttribute = {}) {
 function hiddenStopsMakers(hiddenStop) {
 
     return {
-
         airportName: "",
         cityCode: "",
         cityName: "",
