@@ -199,8 +199,6 @@ const formatTime = (time = "") => {
     //console.log(minutes, time)
     const hours = Math.floor(minutes / 60);
     const remainingMinutes = minutes % 60;
-
-
     return `${hours}H ${remainingMinutes}Min`;
 };
 
@@ -312,7 +310,6 @@ function hiddenStopsMakers(hiddenStop) {
 
 
 function flightAmenitiesMakers(airAmenities) {
-
 
 }
 
@@ -468,9 +465,8 @@ function paxPriceMakers(paxPrice = {}) {
 }
 
 function segmentPriceMaker(segmentPrice) {
-
     return {
-        baseFare: extractNumberFromString(segmentPrice?.EquivalentBasePrice || ""),
+        baseFare: extractNumberFromString(segmentPrice?.ApproximateBasePrice || ""),
         tax: extractNumberFromString(segmentPrice?.ApproximateTaxes || ""),
         totalFare: extractNumberFromString(segmentPrice?.ApproximateTotalPrice || ""),
         currency: extractAlphabeticPart(segmentPrice?.ApproximateTotalPrice || ""),
@@ -587,11 +583,9 @@ const tripType = detectRouteType(routes)
 console.log(tripType)
 
 let counter = 0
-
-
 const returnData = []
 
-const pricePoint = airPricingSolutions[1]
+// const pricePoint = airPricingSolutions[1]
 airPricingSolutions.forEach(pricePoint => {
     counter++
     const brandArray = []
@@ -614,12 +608,10 @@ airPricingSolutions.forEach(pricePoint => {
     const isRefundable = pricingInfos[0]?.attrib?.Refundable === "true" ? "Refundable" : "NonRefundable"
     const carrier = pricingInfos[0]?.attrib?.PlatingCarrier || ""
 
-    console.log(isRefundable, carrier)
     pricingInfos.forEach(info => {
         const fareInfoRefsInInfo = info.findall('.//air:FareInfoRef');
         const passengerTypes = info.findall('.//air:PassengerType');
         const paxPrice = attributeToObject(info?.attrib)
-
 
         // get booking segment related data
 
@@ -788,7 +780,7 @@ airPricingSolutions.forEach(pricePoint => {
     const segmentPrices = segmentPriceMaker(airPrice)
     const returnObject = {
 
-        system: 'system002',
+        system: 'Indigo',
         tripType,
         journeyType: 'when it determine',
         carrier,
