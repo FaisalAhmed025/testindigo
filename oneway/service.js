@@ -50,7 +50,6 @@ function extractNumberFromString(string) {
   return number ? parseInt(number[0]) : 0;
 }
 
-
 function paxPriceMakers(paxPrice = {}) {
 
   // console.log(paxPrice)
@@ -110,6 +109,7 @@ function attributeToObject(attributes) {
     return attributesObject;
 }
 
+
 function calculateTransitTime(flights = []) {
     const transit = [];
 
@@ -125,7 +125,6 @@ function calculateTransitTime(flights = []) {
         const transitDuration = moment.duration(departureDateTime.diff(arrivalDateTime));
         const hours = Math.floor(transitDuration.asHours());
         const minutes = transitDuration.minutes();
-
         transit.push({transit: `${hours}H ${minutes}Min`});
     }
 
@@ -175,7 +174,7 @@ function extractRoutes(routes = []) {
 
 function detectRouteType(routes = []) {
     const routeCount = routes?.length;
-    //console.log(routeCount, routes[0].Origin )
+    //console.log(routeCount, routes[0].Origin)
     return routeCount === 1 ? "oneWay" : routeCount === 2 && routes[0].Origin === routes[1].Destination && routes[0].Destination === routes[1].Origin ? "roundWay" : "multiCity";
 }
 
@@ -189,7 +188,6 @@ function parseDateTime(dateTimeString) {
     const returnDate = dateTime.toISOString().split('T')[0];
     const returnTime = dateTime.toISOString().split('T')[1].split('.')[0];
     const returnDateTime = returnDate + 'T' + returnTime;
-
     return { returnDate, returnTime, returnDateTime };
 }
 
@@ -497,7 +495,6 @@ const extractJourneys = (journeyElements = [], bookingData = [], baggageArray = 
     // Iterate over each journey element
     for (let i = 0; i < journeyElements.length; i++) {
 
-
         const journeyElement = journeyElements[i];
         const journeyDetails = {AirSegmentRefs: []};
 
@@ -602,11 +599,11 @@ airPricingSolutions.forEach(pricePoint => {
     children.filter(element => element.tag === 'air:Journey');
     const journeyElements = pricePoint.findall('.//air:Journey')
 
-
     const pricingInfos = pricePoint.findall('.//air:AirPricingInfo');
 
     const isRefundable = pricingInfos[0]?.attrib?.Refundable === "true" ? "Refundable" : "NonRefundable"
-    const carrier = pricingInfos[0]?.attrib?.PlatingCarrier || ""
+    const carrier = pricingInfos[0]?.attrib?.PlatingCarrier || "6E"
+    console.log(pricingInfos[0]?.attrib)
 
     pricingInfos.forEach(info => {
         const fareInfoRefsInInfo = info.findall('.//air:FareInfoRef');
@@ -614,7 +611,6 @@ airPricingSolutions.forEach(pricePoint => {
         const paxPrice = attributeToObject(info?.attrib)
 
         // get booking segment related data
-
 
         const passengers = {}
         passengerTypes.forEach((passenger, index) => {
@@ -785,7 +781,7 @@ airPricingSolutions.forEach(pricePoint => {
         journeyType: 'when it determine',
         carrier,
         isRefundable,
-        class: 'soon'|| "",
+        class:  "",
         baseFare: segmentPrices.baseFare,
         taxes: segmentPrices.tax,
         totalFare: segmentPrices.totalFare,
