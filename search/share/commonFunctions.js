@@ -611,7 +611,6 @@ function createPenaltyObjects(changePenalty, cancelPenalty, isRefundable,  passe
 }
 
 export default {
-
     extractAlphabeticPart,
     splitBaggageSets,
     segmentMaker,

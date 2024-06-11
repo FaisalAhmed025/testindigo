@@ -5,7 +5,6 @@ import { indigocontroller } from './indigocontroler'
 const router = express.Router()
 
 //oneway
-router.get('/oneway/aftersearch', indigocontroller.afterSearch  )
-
+router.get('/oneway/aftersearch', indigocontroller.afterSearch)
 
 export default router;

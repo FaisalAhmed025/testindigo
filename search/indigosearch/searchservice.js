@@ -187,7 +187,7 @@ const asfterSearch = async (req,res) => {
                 const upSellFareInfo = etree.find(`.//air:FareInfo[@Key='${upSellFareKey}']`, etree.namespaces);
 
                   const upSellBrandElement = etree.find(`.//air:BrandList/air:Brand[@BrandID='${fareBrandAttribute?.BrandID}']`, etree.namespaces);
-                  console.log(upSellBrandElement)
+    
 
                 // fare attribute
                 const upSellFAttributeData = commonFunctions.attributeToObject(upSellFareInfo?.attrib);
@@ -276,7 +276,7 @@ const asfterSearch = async (req,res) => {
         // amenities: amenitiesArray,
         // brandCount: uniqueBrandArray.length,
         // brands: uniqueBrandArray,
-        baggage: uniqueBaggage,
+        // baggage: uniqueBaggage,
         priceBreakdown,
         transit: transitTimes,
         //flightAmenities: commonFunctions.getDeviceFeatures(),
