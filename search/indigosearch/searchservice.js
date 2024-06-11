@@ -186,17 +186,18 @@ const asfterSearch = async (req,res) => {
                 //console.log(upSellFareBasis, fareAttributeData?.FareBasis)
                 const upSellFareInfo = etree.find(`.//air:FareInfo[@Key='${upSellFareKey}']`, etree.namespaces);
 
-                //   const upSellBrandElement = etree.find(`.//air:BrandList/air:Brand[@BrandID='${fareBrandAttribute?.BrandID}']`, etree.namespaces);
+                  const upSellBrandElement = etree.find(`.//air:BrandList/air:Brand[@BrandID='${fareBrandAttribute?.BrandID}']`, etree.namespaces);
+                  console.log(upSellBrandElement)
 
                 // fare attribute
                 const upSellFAttributeData = commonFunctions.attributeToObject(upSellFareInfo?.attrib);
 
-                const brandChild = upSellFareInfo._children.filter(element => element.tag === 'air:Brand');
+                const brandChild = upSellFareInfo?._children.filter(element => element.tag === 'air:Brand') || [];
                 const upSellFareBrandAttribute = commonFunctions.attributeToObject(brandChild[0]?.attrib);
 
                 upSellFAttributeData.PassengerCode = passengers.code;
                 upSellFAttributeData.BrandTier = upSellFareBrandAttribute.BrandTier;
-                //  fareAttributeData.BrandTier = fareBrandAttribute.BrandTier;
+                 fareAttributeData.BrandTier = fareBrandAttribute.BrandTier;
                 fareAttributeData.FareBasis = upSellFareBasis || fareAttributeData?.FareBasis;
                 //   console.log(upSellFAttributeData)
                 const {
@@ -265,16 +266,16 @@ const asfterSearch = async (req,res) => {
         carrier:cityCount[0][0].marketingCarrier,
         carrierName: cityCount[0][0].operatingCarrierName|| '',
         isRefundable,
-        // class: body.cabin || '',
+        class: cityCount[0][0].cabinCode || '',
         baseFare: segmentPrices.baseFare,
         taxes: segmentPrices.tax,
         totalFare: segmentPrices.totalFare,
         isGroupFare: false,
         partiallyEligible: false,
-        // route: body.segmentsList || [],
-        amenities: amenitiesArray,
-        brandCount: uniqueBrandArray.length,
-        brands: uniqueBrandArray,
+        route:  routes || [],
+        // amenities: amenitiesArray,
+        // brandCount: uniqueBrandArray.length,
+        // brands: uniqueBrandArray,
         baggage: uniqueBaggage,
         priceBreakdown,
         transit: transitTimes,

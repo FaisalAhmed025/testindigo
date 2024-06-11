@@ -189,7 +189,7 @@ function paxPriceMakers(paxPrice = {}) {
 function segmentPriceMaker(segmentPrice) {
 
     return {
-        
+
         baseFare: extractNumberFromString(segmentPrice?.EquivalentBasePrice || segmentPrice?.ApproximateBasePrice || ""),
         tax: extractNumberFromString(segmentPrice?.ApproximateTaxes || ""),
         totalFare: extractNumberFromString(segmentPrice?.ApproximateTotalPrice || ""),
