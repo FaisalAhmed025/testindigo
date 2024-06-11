@@ -205,6 +205,7 @@ function extractNumberFromString(string = "") {
   return number ? parseInt(number[0]) : 0;
 }
 
+
 function extractBaggageWeights(baggageAllowance = []) {
     let baggageWeights = '';
 
@@ -330,21 +331,29 @@ function extractAlphabeticPart(inputString = "") {
     }
 }
 
-const segmentMaker = (segmentData = {}) => {
 
-    // console.log(segmentData)
+const segmentMaker = async (segmentData = {}) => {
+
+    //console.log(segmentData)
     const codeShared = segmentData?.OperatingCarrier !== segmentData?.Carrier
     const duration = formatTime(segmentData?.FlightTime)
     const departureData = parseDateTime(segmentData?.DepartureTime);
     const arrivalData = parseDateTime(segmentData?.ArrivalTime);
+    const getDepartureAirportData = await getAirportByCode(segmentData?.Origin)
+    const getArrivalAirportData = await getAirportByCode(segmentData?.Destination)
+
+    const operatingCarrierName = await getAirlinesByCode(segmentData?.OperatingCarrier) || {}
+    const marketingCarrierName = await getAirlinesByCode(segmentData?.Carrier) || {}
+
+    const airCartModel = await aircraftService.getAirCraftByCode(segmentData?.Equipment || "")
     return {
         codeShared,
-        airCraft: segmentData?.Equipment || "",
+        airCraft: airCartModel.aircraftModel || "",
         marketingCarrier: segmentData?.Carrier || "",
-        marketingCarrierName: '',
+        marketingCarrierName: marketingCarrierName?.name || "",
         marketingFlight: extractNumberFromString(segmentData?.FlightNumber || ""),
         operatingCarrier: segmentData?.OperatingCarrier || "",
-        operatingCarrierName: '',
+        operatingCarrierName: operatingCarrierName?.name || '',
         operatingFlight: extractNumberFromString(segmentData?.OperatingFlightNumber || ""),
         totalMilesFlown: extractNumberFromString(segmentData?.Distance || ""),
         flightDuration: duration || "",
@@ -352,28 +361,41 @@ const segmentMaker = (segmentData = {}) => {
         departureDate: departureData.returnDate || "",
         departureTime: departureData.returnTime || "",
         departureDateTime: departureData.returnDateTime || "",
-        departureAirport: "",
-        departureCityCode: "",
-        departureCityName: "",
-        departureCountryCode: "",
-        departureCountryName: "",
-        departureLocation: "",
-        dTerminal: segmentData?.OriginTerminal || "",
+        departureAirport: getDepartureAirportData.name || "",
+        departureCityCode: getDepartureAirportData.cityCode || "",
+        departureCityName: getDepartureAirportData.cityName || "",
+        departureCountryCode: getDepartureAirportData.countryCode || "",
+        departureCountryName: getDepartureAirportData.countryName || "",
+        departureLocation: `${getDepartureAirportData.cityName},${getDepartureAirportData.countryName}` || "",
+        dTerminal: processTerminalString(segmentData?.OriginTerminal) || "",
         arrival: segmentData?.Destination || "",
         arrivalDate: arrivalData?.returnDate || "",
         arrivalTime: arrivalData?.returnTime || "",
         arrivalDateTime: arrivalData?.returnDateTime || "",
-        arrivalAirport: "",
-        arrivalCityCode: "",
-        arrivalCityName: "",
-        arrivalCountryCode: "",
-        arrivalCountryName: "",
-        arrivalLocation: "",
-        aTerminal: segmentData?.DestinationTerminal || "",
+        arrivalAirport: getArrivalAirportData.name || "",
+        arrivalCityCode: getArrivalAirportData.cityCode || "",
+        arrivalCityName: getArrivalAirportData.cityName || "",
+        arrivalCountryCode: getArrivalAirportData.countryCode || "",
+        arrivalCountryName: getArrivalAirportData.countryName || "",
+        arrivalLocation: `${getArrivalAirportData.cityName},${getArrivalAirportData.countryName}` || "",
+        aTerminal: processTerminalString(segmentData?.DestinationTerminal) || "",
         bookingClass: segmentData?.BookingCode || "",
         cabinCode: getClassFromCabinClass(segmentData?.CabinClass || "") || "",
         mealCode: "",
         availableSeats: extractNumberFromString(segmentData?.BookingCount || "") || "",
+        baggage: segmentData.baggage || [],
+        metadata: {
+            Key: segmentData?.SegmentRef || "",
+            DepartureTime: segmentData?.DepartureTime || "",
+            ArrivalTime: segmentData?.ArrivalTime || "",
+            FlightNumber: segmentData?.FlightNumber || "",
+            BookingCode: segmentData?.BookingCode || "",
+            Origin: segmentData?.Origin || "",
+            Destination: segmentData?.Destination || "",
+            Carrier: segmentData?.Carrier || "",
+            airCraft: airCartModel.aircraftModel || "",
+            availableSeats: extractNumberFromString(segmentData?.BookingCount || "") || ""
+        }
     }
 
 }
@@ -435,6 +457,7 @@ function splitBaggageSets(baggage = []) {
 
     return sets.filter(set => set.length > 0)
 }
+
 
 
 function paxPriceMakers(paxPrice = {}) {
@@ -603,7 +626,6 @@ airPricingSolutions.forEach(pricePoint => {
 
     const isRefundable = pricingInfos[0]?.attrib?.Refundable === "true" ? "Refundable" : "NonRefundable"
     const carrier = pricingInfos[0]?.attrib?.PlatingCarrier || "6E"
-    console.log(pricingInfos[0]?.attrib)
 
     pricingInfos.forEach(info => {
         const fareInfoRefsInInfo = info.findall('.//air:FareInfoRef');
@@ -716,7 +738,6 @@ airPricingSolutions.forEach(pricePoint => {
 
     const cityCount = extractJourneys(journeyElements, bookingRelatedData, baggageArray);
 
-
     const uniqueBrandIds = new Set();
     const uniqueBrandArray = brandArray.map(brand => {
         // Check if the current brandId is already in the Set
@@ -775,21 +796,20 @@ airPricingSolutions.forEach(pricePoint => {
 
     const segmentPrices = segmentPriceMaker(airPrice)
     const returnObject = {
-
         system: 'Indigo',
         tripType,
-        journeyType: 'when it determine',
+        journeyType: '',
         carrier,
         isRefundable,
-        class:  "",
+        class: cityCount[0][0].bookingClass || "",
         baseFare: segmentPrices.baseFare,
         taxes: segmentPrices.tax,
         totalFare: segmentPrices.totalFare,
-        "isGroupFare": false,
-        "partiallyEligible": false,
+        isGroupFare: false,
+        partiallyEligible: false,
         brandCount: uniqueBrandArray.length,
-        brands: uniqueBrandArray,
-        baggage: baggageArray,
+        // brands: uniqueBrandArray,
+        // baggage: baggageArray,
         priceBreakDown,
         transit: transitTimes,
         cityCount
