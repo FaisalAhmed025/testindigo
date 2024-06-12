@@ -12,7 +12,6 @@ const extractJourneys = async (etree, journeyElements = [], bookingData = []) =>
     // Iterate over each journey element
     for (let i = 0; i < journeyElements.length; i++) {
 
-
         const journeyElement = journeyElements[i];
         const journeyDetails = {AirSegmentRefs: []};
 

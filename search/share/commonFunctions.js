@@ -162,14 +162,20 @@ function extractNumberFromString(string = "") {
 
 function paxPriceMakers(paxPrice = {}) {
 
-    // console.log(paxPrice)
- const tax = extractNumberFromString(paxPrice.ApproximateTaxes || "") || 0
- const paxCount = paxPrice.paxCount || 1
- const baseFare = extractNumberFromString(paxPrice.ApproximateBasePrice || "") || 0
- const totalBaseFare = baseFare * paxCount
- const totalTaxAmount = tax * paxCount
- const fees = extractNumberFromString(paxPrice.ApproximateFees || paxPrice.Fees || "")
- const totalperice = extractNumberFromString(paxPrice.ApproximateTotalPrice || "") || 0
+    const paxCount = paxPrice?.paxCount
+    console.log(paxPrice)
+    const tax = extractNumberFromString(paxPrice?.ApproximateTaxes || "") || 0
+    const totalTaxAmount = tax * paxCount
+    const baseFare = extractNumberFromString(paxPrice?.ApproximateBasePrice || "") || 0
+    const totalBaseFare = baseFare * paxCount
+    const fees = extractNumberFromString(paxPrice?.ApproximateFees || "")
+    const totalfees = fees * paxCount
+    const price = extractNumberFromString(paxPrice?.ApproximateTotalPrice || "") || 0
+    const totalprice = price * paxCount
+
+
+
+
  return {
    paxType: paxPrice.code || "",
    paxCount,
@@ -178,18 +184,16 @@ function paxPriceMakers(paxPrice = {}) {
    totalBaseFare,
    tax,
    totalTaxAmount,
-   totalAmount: totalperice,
+   totalAmount: totalprice,
    discount: 0,
    otherCharges: 0,
-   serviceFee: fees,
+   serviceFee: totalfees,
  }
 }
 
 
 function segmentPriceMaker(segmentPrice) {
-
     return {
-
         baseFare: extractNumberFromString(segmentPrice?.EquivalentBasePrice || segmentPrice?.ApproximateBasePrice || ""),
         tax: extractNumberFromString(segmentPrice?.ApproximateTaxes || ""),
         totalFare: extractNumberFromString(segmentPrice?.ApproximateTotalPrice || ""),

@@ -8,7 +8,6 @@ const featureCodes = [
   },
   {
     id: 2,
-
     code: featureConstants.CHECKING_BAG,
     commercialName: ['checked', 'checked in', 'checked baggage', 'check in bag', 'check in baggage', 'Check in']
   },

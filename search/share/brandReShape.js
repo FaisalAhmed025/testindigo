@@ -20,10 +20,10 @@ const brandReShape = (brand = [], structureFareRule =[], isRefundable ) => {
 
     // console.log(singleBrand.feature[0]?.description)
 
-    const {baggageFeatures, otherFeatures} = categorizeDescriptions(singleDescriptions);
+    const { otherFeatures, baggageFeatures} = categorizeDescriptions(singleDescriptions);
 
     // console.log(baggageFeatures, otherFeatures);
-    singleBrand.baggageFeatures = baggageFeatures;
+    singleBrand.baggageFeatures = baggageFeatures
 
     // Identify if "refund" and "reissue" codes are present in otherFeatures
     const hasRefundOrReissue = otherFeatures.some(feature =>
@@ -90,7 +90,6 @@ const createBrandFareRule = (structureFareRule = []) => {
 }
 
 const categorizeDescriptions = (descriptions) => {
-
   const regex = /[^\w\s]/g; // Match any character that is not a word character or whitespace
   const matches = [];
   const ignorePhrases = [
@@ -99,20 +98,21 @@ const categorizeDescriptions = (descriptions) => {
   ];
 
   // Function to clean and normalize text
-  const cleanText = text => {
-    return  text
+ // Function to clean and normalize text
+ const cleanText = text => {
+  if (typeof text !== 'string') return ''; // Ensure text is a string
+  return text
       .toLowerCase()
       .replace(regex, ' ') // Remove special characters except hyphens
       .replace(/-/g, ' '); // Replace hyphens with spaces
-
-    // return cleaned;
-  };
-
+};
 // Function to check if a description should be ignored
   const shouldIgnoreDescription = description => {
     const cleanedDescription = cleanText(description);
     return ignorePhrases.some(phrase => cleanedDescription.includes(cleanText(phrase)));
   };
+
+  console.log(descriptions)
 
   descriptions.forEach(description => {
     if (shouldIgnoreDescription(description)) {
@@ -151,6 +151,51 @@ const categorizeDescriptions = (descriptions) => {
   return {baggageFeatures, otherFeatures}
 
 }
+
+
+// const IndidocategorizeDescriptions = (descriptions) => {
+//   const regex = /[^\w\s]/g; // Match any character that is not a word character or whitespace
+//   const ignorePhrases = [
+//       'refer fare quote',
+//       'please note that'
+//   ];
+
+//   // Function to clean and normalize text
+//     // Function to clean and normalize text
+//     const cleanText = text => {
+//       if (typeof text !== 'string') return ''; // Ensure text is a string
+//       return text
+//           .toLowerCase()
+//           .replace(regex, ' ') // Remove special characters except hyphens
+//           .replace(/-/g, ' '); // Replace hyphens with spaces
+//   };
+//   // Function to check if a description should be ignored
+//   const shouldIgnoreDescription = description => {
+//       const cleanedDescription = cleanText(description);
+//       return ignorePhrases.some(phrase => cleanedDescription.includes(cleanText(phrase)));
+//   };
+
+//   descriptions.forEach(description => {
+//       if (shouldIgnoreDescription(description)) {
+//           return; // Skip this description if it contains any ignored phrase
+//       }
+//       const cleanedDescription = cleanText(description);
+//       const matchedCodes = new Set();
+
+//       // Check if any commercialName is present in the cleaned description
+//       featureCodes.forEach(entry => {
+//           entry.commercialName.forEach(name => {
+//               const cleanedName = cleanText(name);
+//               if (cleanedDescription.includes(cleanedName)) {
+//                   matchedCodes.add(entry.code);
+//               }
+//           });
+//       });
+
+//       // Log or process matched codes as needed
+//       console.log(`Description: "${description}" matches codes: ${[...matchedCodes].join(', ')}`);
+//   });
+// };
 
 
 

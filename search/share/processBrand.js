@@ -21,10 +21,17 @@ function memoizeProcessText(text) {
 
     // Process the text and store the result in the cache
     const result = processText(text);
-    cache[cacheKey] = result;
+    const x =Indigoformatetext(result)
+    cache[cacheKey] = x;
     cacheLastUpdated = now;
+    return x;
+}
 
-    return result;
+
+function Indigoformatetext(text){
+     // Split by comma
+     const splitDescriptions = text.flatMap(description => description.split(/\.\s*/));
+     return splitDescriptions;
 }
 
 
@@ -78,8 +85,6 @@ const processPlainText = (text) => {
 };
 
 function filterLine( filteredLines) {
-
-
     const unwantedChars = ['*', '˄']
     const nonEmptyLines = filteredLines.filter(line => line !== '');
     // Further clean to remove unmatched parentheses and trim
@@ -192,6 +197,7 @@ const splitTextIntoLines = (text) => {
 
 
 };
+
 
 /**
  * Processes the given lines and updates them based on specific conditions.

@@ -14,8 +14,12 @@ function getFareData(etree, key = "", passengers = {}) {
     // get brand information
     const brandChild = fareChildren.filter(element => element.tag === 'air:Brand');
     const fareBrandAttribute = commonFunctions.attributeToObject(brandChild[0]?.attrib)
+
     // now get the brand information
     const brandElement = etree.find(`.//air:BrandList/air:Brand[@BrandID='${fareBrandAttribute?.BrandID}']`, etree.namespaces);
+
+
+    console.log(brandElement)
 
     // console.log(fareBrandAttribute?.BrandID, brandElement)
     // brand raw data
