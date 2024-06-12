@@ -1,590 +1,590 @@
-﻿<air:LowFareSearchRsp TraceId="Fly-Far-Tech" TransactionId="0AF9E2AD0A0E7DC133A8BCA7FBC461FE" ResponseTime="1176" DistanceUnits="MI" CurrencyType="BDT" xmlns:air="http://www.travelport.com/schema/air_v52_0" xmlns:common_v52_0="http://www.travelport.com/schema/common_v52_0">
+﻿<air:LowFareSearchRsp TraceId="Fly-Far-Tech" TransactionId="0C28834A0A0EE103294B6AEA604B220E" ResponseTime="2228" DistanceUnits="MI" CurrencyType="BDT" xmlns:air="http://www.travelport.com/schema/air_v52_0" xmlns:common_v52_0="http://www.travelport.com/schema/common_v52_0">
   <common_v52_0:ResponseMessage Code="15100" Type="Warning" ProviderCode="ACH">Passenger type level fees are informational only, and may not match with those returned at the itinerary level.</common_v52_0:ResponseMessage>
   <common_v52_0:ResponseMessage Code="14" Type="Warning" ProviderCode="ACH">6E does not support Passenger Type Code CNN,CNN; request submitted as CHD</common_v52_0:ResponseMessage>
   <air:FlightDetailsList>
-    <air:FlightDetails Key="NY36IAB3nDKAbfpiUBAAAA==" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T10:40:00.000+06:00" ArrivalTime="2024-07-21T11:05:00.000+05:30" FlightTime="55" TravelTime="55" Equipment="320" />
-    <air:FlightDetails Key="NY36IAB3nDKAvfpiUBAAAA==" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T17:15:00.000+06:00" ArrivalTime="2024-07-21T17:45:00.000+05:30" FlightTime="60" TravelTime="60" Equipment="321" />
+    <air:FlightDetails Key="GMPyL/DEuDKAzggx2rAAAA==" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T17:15:00.000+06:00" ArrivalTime="2024-07-21T17:45:00.000+05:30" FlightTime="60" TravelTime="60" Equipment="321" />
+    <air:FlightDetails Key="GMPyL/DEuDKAHhgx2rAAAA==" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T10:40:00.000+06:00" ArrivalTime="2024-07-21T11:05:00.000+05:30" FlightTime="55" TravelTime="55" Equipment="320" />
   </air:FlightDetailsList>
   <air:AirSegmentList>
-    <air:AirSegment Key="NY36IAB3nDKAafpiUBAAAA==" Group="0" Carrier="6E" FlightNumber="1108" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T10:40:00.000+06:00" ArrivalTime="2024-07-21T11:05:00.000+05:30" FlightTime="55" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="NY36IAB3nDKA3ipiUBAAAA==">
-      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1108">IndiGo</air:CodeshareInfo>
-      <air:AirAvailInfo ProviderCode="ACH" />
-      <air:FlightDetailsRef Key="NY36IAB3nDKAbfpiUBAAAA==" />
-    </air:AirSegment>
-    <air:AirSegment Key="NY36IAB3nDKAufpiUBAAAA==" Group="0" Carrier="6E" FlightNumber="1106" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T17:15:00.000+06:00" ArrivalTime="2024-07-21T17:45:00.000+05:30" FlightTime="60" Equipment="321" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="NY36IAB3nDKA3ipiUBAAAA==">
+    <air:AirSegment Key="GMPyL/DEuDKAyggx2rAAAA==" Group="0" Carrier="6E" FlightNumber="1106" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T17:15:00.000+06:00" ArrivalTime="2024-07-21T17:45:00.000+05:30" FlightTime="60" Equipment="321" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="GMPyL/DEuDKAPkgx2rAAAA==">
       <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1106">IndiGo</air:CodeshareInfo>
       <air:AirAvailInfo ProviderCode="ACH" />
-      <air:FlightDetailsRef Key="NY36IAB3nDKAvfpiUBAAAA==" />
+      <air:FlightDetailsRef Key="GMPyL/DEuDKAzggx2rAAAA==" />
+    </air:AirSegment>
+    <air:AirSegment Key="GMPyL/DEuDKAGhgx2rAAAA==" Group="0" Carrier="6E" FlightNumber="1108" Origin="DAC" Destination="CCU" DepartureTime="2024-07-21T10:40:00.000+06:00" ArrivalTime="2024-07-21T11:05:00.000+05:30" FlightTime="55" Equipment="320" Status="KK" SupplierCode="6E" ChangeOfPlane="false" OptionalServicesIndicator="false" APISRequirementsRef="GMPyL/DEuDKAPkgx2rAAAA==">
+      <air:CodeshareInfo OperatingCarrier="6E" OperatingFlightNumber="1108">IndiGo</air:CodeshareInfo>
+      <air:AirAvailInfo ProviderCode="ACH" />
+      <air:FlightDetailsRef Key="GMPyL/DEuDKAHhgx2rAAAA==" />
     </air:AirSegment>
   </air:AirSegmentList>
   <air:FareInfoList>
-    <air:FareInfo Key="NY36IAB3nDKAffpiUBAAAA==" FareBasis="RTINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAffpiUBAAAA==" ProviderCode="ACH">uuid-a116184e-cc06-4bb6-86e6-02cf8197a89f</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA5ipiUBAAAA==" BrandID="1421698" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKA3ggx2rAAAA==" FareBasis="RTINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA3ggx2rAAAA==" ProviderCode="ACH">uuid-b1ea327b-a25b-4af7-bb05-75fb3872ae32</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAVkgx2rAAAA==" BrandID="1421698" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAjfpiUBAAAA==" FareBasis="RTINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAjfpiUBAAAA==" ProviderCode="ACH">uuid-f2788a40-bc7c-409f-aa5b-7896706b1721</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA7ipiUBAAAA==" BrandID="1421698" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKA7ggx2rAAAA==" FareBasis="RTINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA7ggx2rAAAA==" ProviderCode="ACH">uuid-af4b5b75-8a5f-4bcb-ac01-f27f8882f184</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAXkgx2rAAAA==" BrandID="1421698" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAnfpiUBAAAA==" FareBasis="RTINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAnfpiUBAAAA==" ProviderCode="ACH">uuid-1b9e7064-d7d8-4be1-8005-c464327d1092</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA9ipiUBAAAA==" BrandID="1421698" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKA/ggx2rAAAA==" FareBasis="RTINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA/ggx2rAAAA==" ProviderCode="ACH">uuid-2f7c6f11-7bee-468b-8852-89fb56e343aa</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAZkgx2rAAAA==" BrandID="1421698" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAyfpiUBAAAA==" FareBasis="RTINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAyfpiUBAAAA==" ProviderCode="ACH">uuid-c57d24ed-b3bd-49e0-87ca-effa79a5a3fa</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA/ipiUBAAAA==" BrandID="1421698" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAKhgx2rAAAA==" FareBasis="RTINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAKhgx2rAAAA==" ProviderCode="ACH">uuid-65893dd6-8601-471c-b56f-7cf83926195d</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAkkgx2rAAAA==" BrandID="1421698" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKA2fpiUBAAAA==" FareBasis="RTINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKA2fpiUBAAAA==" ProviderCode="ACH">uuid-2e48c9c8-aee4-4747-9dd9-b589533d4637</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKABjpiUBAAAA==" BrandID="1421698" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAOhgx2rAAAA==" FareBasis="RTINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3191.00" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAOhgx2rAAAA==" ProviderCode="ACH">uuid-1bd82504-cbf1-4247-a1ff-3e5b0dcc2a0e</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKArkgx2rAAAA==" BrandID="1421698" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKA6fpiUBAAAA==" FareBasis="RTINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKA6fpiUBAAAA==" ProviderCode="ACH">uuid-c7498cfe-f95e-4fa4-8853-2416314965d5</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKADjpiUBAAAA==" BrandID="1421698" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAShgx2rAAAA==" FareBasis="RTINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Promo Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAShgx2rAAAA==" ProviderCode="ACH">uuid-3942a909-d908-467f-abac-94c7cf408f5e</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAykgx2rAAAA==" BrandID="1421698" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKADgpiUBAAAA==" FareBasis="RFINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKADgpiUBAAAA==" ProviderCode="ACH">uuid-737d6b41-130e-4d62-8d2a-e59d4cf4c492</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAFjpiUBAAAA==" BrandID="1421706" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAbhgx2rAAAA==" FareBasis="RFINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAbhgx2rAAAA==" ProviderCode="ACH">uuid-b01ab646-bd8e-443f-9333-f4fcb7629cc0</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKA9kgx2rAAAA==" BrandID="1421706" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAHgpiUBAAAA==" FareBasis="RFINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAHgpiUBAAAA==" ProviderCode="ACH">uuid-1b647898-8ff8-463d-b0cc-d78821d1a284</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAHjpiUBAAAA==" BrandID="1421706" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAfhgx2rAAAA==" FareBasis="RFINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAfhgx2rAAAA==" ProviderCode="ACH">uuid-d24e4728-3566-4800-8533-b2cae2ebb9fc</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAFlgx2rAAAA==" BrandID="1421706" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKALgpiUBAAAA==" FareBasis="RFINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKALgpiUBAAAA==" ProviderCode="ACH">uuid-8149c1d0-0887-431a-8695-215134c9480a</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAJjpiUBAAAA==" BrandID="1421706" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAjhgx2rAAAA==" FareBasis="RFINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAjhgx2rAAAA==" ProviderCode="ACH">uuid-bcd8deb9-e259-4fcb-8e78-c76a918e958f</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKANlgx2rAAAA==" BrandID="1421706" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAUgpiUBAAAA==" FareBasis="RFINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAUgpiUBAAAA==" ProviderCode="ACH">uuid-f9b7e8de-7f32-40b3-a846-fa6963553f89</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKALjpiUBAAAA==" BrandID="1421706" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAshgx2rAAAA==" FareBasis="RFINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAshgx2rAAAA==" ProviderCode="ACH">uuid-c83f93a6-edc6-4178-ae80-31a110217724</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAVlgx2rAAAA==" BrandID="1421706" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAYgpiUBAAAA==" FareBasis="RFINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAYgpiUBAAAA==" ProviderCode="ACH">uuid-d631bac7-2226-46c3-9507-d7973026b72d</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKANjpiUBAAAA==" BrandID="1421706" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAwhgx2rAAAA==" FareBasis="RFINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3331.00" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAwhgx2rAAAA==" ProviderCode="ACH">uuid-6476f641-8141-481e-8531-478d209d87a0</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAdlgx2rAAAA==" BrandID="1421706" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAcgpiUBAAAA==" FareBasis="RFINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAcgpiUBAAAA==" ProviderCode="ACH">uuid-bc5cd19c-5812-4b73-a3cc-f0906a7871d8</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAPjpiUBAAAA==" BrandID="1421706" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKA0hgx2rAAAA==" FareBasis="RFINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Family Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA0hgx2rAAAA==" ProviderCode="ACH">uuid-c3e3c925-c48c-4fd3-a944-bf70eefe9098</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAnlgx2rAAAA==" BrandID="1421706" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAlgpiUBAAAA==" FareBasis="R0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAlgpiUBAAAA==" ProviderCode="ACH">uuid-43340625-16db-48a0-b17a-88b96632d52a</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKARjpiUBAAAA==" BrandID="1421702" UpSellBrandID="1421700">
-        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="NY36IAB3nDKA6hpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKA9hgx2rAAAA==" FareBasis="R0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA9hgx2rAAAA==" ProviderCode="ACH">uuid-02ca34f5-5f9e-4806-964c-aae9d3a821d3</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAzlgx2rAAAA==" BrandID="1421702" UpSellBrandID="1421700">
+        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="GMPyL/DEuDKASjgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKApgpiUBAAAA==" FareBasis="R0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKApgpiUBAAAA==" ProviderCode="ACH">uuid-8106c30f-fb8f-4bd2-8f40-5b1b0427d5d3</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKATjpiUBAAAA==" BrandID="1421702" UpSellBrandID="1421700">
-        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="NY36IAB3nDKA+hpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKABigx2rAAAA==" FareBasis="R0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKABigx2rAAAA==" ProviderCode="ACH">uuid-7097cd54-d934-4847-b820-5db93418afb8</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAAmgx2rAAAA==" BrandID="1421702" UpSellBrandID="1421700">
+        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="GMPyL/DEuDKAWjgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAtgpiUBAAAA==" FareBasis="R0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAtgpiUBAAAA==" ProviderCode="ACH">uuid-7b8798a7-cf97-4d22-b950-84df1eb52e3e</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAVjpiUBAAAA==" BrandID="1421702" UpSellBrandID="1421700">
-        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="NY36IAB3nDKACipiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKAFigx2rAAAA==" FareBasis="R0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAFigx2rAAAA==" ProviderCode="ACH">uuid-ec9e198f-61e7-4bad-9024-dd6876c2084e</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAImgx2rAAAA==" BrandID="1421702" UpSellBrandID="1421700">
+        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="GMPyL/DEuDKAajgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKA2gpiUBAAAA==" FareBasis="R0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKA2gpiUBAAAA==" ProviderCode="ACH">uuid-43b820d7-5c2b-45e9-8c99-b5c589262b84</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAXjpiUBAAAA==" BrandID="1421702" UpSellBrandID="1421700">
-        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="NY36IAB3nDKAphpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKAOigx2rAAAA==" FareBasis="R0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAOigx2rAAAA==" ProviderCode="ACH">uuid-34e77779-5a45-41f9-ac38-c3db240ee3d4</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAWmgx2rAAAA==" BrandID="1421702" UpSellBrandID="1421700">
+        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="GMPyL/DEuDKABjgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKA6gpiUBAAAA==" FareBasis="R0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKA6gpiUBAAAA==" ProviderCode="ACH">uuid-e9c9df6d-7179-4351-a685-e7ceac49eaab</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAZjpiUBAAAA==" BrandID="1421702" UpSellBrandID="1421700">
-        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="NY36IAB3nDKAthpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKASigx2rAAAA==" FareBasis="R0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT3611.00" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKASigx2rAAAA==" ProviderCode="ACH">uuid-b3cfffbe-de7e-43cc-9090-16772b71e172</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAfmgx2rAAAA==" BrandID="1421702" UpSellBrandID="1421700">
+        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="GMPyL/DEuDKAFjgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKA+gpiUBAAAA==" FareBasis="R0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKA+gpiUBAAAA==" ProviderCode="ACH">uuid-cccfcf65-8134-450a-8f0d-f6f11ad9bd1f</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAbjpiUBAAAA==" BrandID="1421702" UpSellBrandID="1421700">
-        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="NY36IAB3nDKAxhpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKAWigx2rAAAA==" FareBasis="R0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Regular Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAWigx2rAAAA==" ProviderCode="ACH">uuid-cabbc3dd-5841-49ee-b164-01f34f707269</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAvmgx2rAAAA==" BrandID="1421702" UpSellBrandID="1421700">
+        <air:UpsellBrand FareBasis="RUINT" FareInfoRef="GMPyL/DEuDKAJjgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAHhpiUBAAAA==" FareBasis="RM0IP" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAHhpiUBAAAA==" ProviderCode="ACH">uuid-2489498b-03ee-43bc-9fcd-4d2f13898937</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAdjpiUBAAAA==" BrandID="1421703" UpSellBrandID="1421698">
-        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="NY36IAB3nDKAffpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKAfigx2rAAAA==" FareBasis="RM0IP" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAfigx2rAAAA==" ProviderCode="ACH">uuid-4287c06e-4b95-4259-9acf-79c87d83c681</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKA/mgx2rAAAA==" BrandID="1421703" UpSellBrandID="1421698">
+        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="GMPyL/DEuDKAKhgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKALhpiUBAAAA==" FareBasis="RM0IP" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKALhpiUBAAAA==" ProviderCode="ACH">uuid-d826ffa3-a7ba-4e46-9b2e-86428991f090</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAfjpiUBAAAA==" BrandID="1421703" UpSellBrandID="1421698">
-        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="NY36IAB3nDKAjfpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKAjigx2rAAAA==" FareBasis="RM0IP" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAjigx2rAAAA==" ProviderCode="ACH">uuid-5d8ec5d7-a2f8-45d3-97fc-487247ba4cf3</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKANngx2rAAAA==" BrandID="1421703" UpSellBrandID="1421698">
+        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="GMPyL/DEuDKAOhgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAPhpiUBAAAA==" FareBasis="RM0IP" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAPhpiUBAAAA==" ProviderCode="ACH">uuid-e81e4270-3758-40f4-aa17-6e1c4f9ce286</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAhjpiUBAAAA==" BrandID="1421703" UpSellBrandID="1421698">
-        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="NY36IAB3nDKAnfpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKAnigx2rAAAA==" FareBasis="RM0IP" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAnigx2rAAAA==" ProviderCode="ACH">uuid-b5fd2c5c-ace1-401e-900a-1e3299a34842</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAWngx2rAAAA==" BrandID="1421703" UpSellBrandID="1421698">
+        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="GMPyL/DEuDKAShgx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAYhpiUBAAAA==" FareBasis="RM0IP" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAYhpiUBAAAA==" ProviderCode="ACH">uuid-1714fecf-2000-47bd-b9ef-5b7ac29e3dc0</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAjjpiUBAAAA==" BrandID="1421703" UpSellBrandID="1421698">
-        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="NY36IAB3nDKAyfpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKAwigx2rAAAA==" FareBasis="RM0IP" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAwigx2rAAAA==" ProviderCode="ACH">uuid-043bbe99-388f-4dc4-b70a-7dcb0b2ae626</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAYngx2rAAAA==" BrandID="1421703" UpSellBrandID="1421698">
+        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="GMPyL/DEuDKA3ggx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAchpiUBAAAA==" FareBasis="RM0IP" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAchpiUBAAAA==" ProviderCode="ACH">uuid-9a2db6ee-4b9c-4add-9b39-a63ec7a372ff</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAljpiUBAAAA==" BrandID="1421703" UpSellBrandID="1421698">
-        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="NY36IAB3nDKA2fpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKA0igx2rAAAA==" FareBasis="RM0IP" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4172.00" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA0igx2rAAAA==" ProviderCode="ACH">uuid-5c558a92-df5c-42b9-940b-5850304b9647</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAangx2rAAAA==" BrandID="1421703" UpSellBrandID="1421698">
+        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="GMPyL/DEuDKA7ggx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAghpiUBAAAA==" FareBasis="RM0IP" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAghpiUBAAAA==" ProviderCode="ACH">uuid-2eb3fb46-56bd-404e-8d5f-100aca4c8d2f</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAnjpiUBAAAA==" BrandID="1421703" UpSellBrandID="1421698">
-        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="NY36IAB3nDKA6fpiUBAAAA==" />
+    <air:FareInfo Key="GMPyL/DEuDKA4igx2rAAAA==" FareBasis="RM0IP" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="SME" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA4igx2rAAAA==" ProviderCode="ACH">uuid-187733ad-f8ba-4658-a50c-8492452fa990</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAcngx2rAAAA==" BrandID="1421703" UpSellBrandID="1421698">
+        <air:UpsellBrand FareBasis="RTINT" FareInfoRef="GMPyL/DEuDKA/ggx2rAAAA==" />
       </air:Brand>
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAphpiUBAAAA==" FareBasis="RUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAphpiUBAAAA==" ProviderCode="ACH">uuid-961172ec-a795-49b2-99d5-78466e0d06f0</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKApjpiUBAAAA==" BrandID="1421700" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKABjgx2rAAAA==" FareBasis="RUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKABjgx2rAAAA==" ProviderCode="ACH">uuid-2892ab94-abca-41dc-bdfc-da41d53d4d23</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAengx2rAAAA==" BrandID="1421700" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAthpiUBAAAA==" FareBasis="RUINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAthpiUBAAAA==" ProviderCode="ACH">uuid-1c056af2-9ced-4c9a-9d18-5d2bf170cc87</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKArjpiUBAAAA==" BrandID="1421700" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAFjgx2rAAAA==" FareBasis="RUINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAFjgx2rAAAA==" ProviderCode="ACH">uuid-31510b67-50b1-496e-9d0c-96ac899e8a45</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAgngx2rAAAA==" BrandID="1421700" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAxhpiUBAAAA==" FareBasis="RUINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAxhpiUBAAAA==" ProviderCode="ACH">uuid-734390c3-2fb8-481f-96bb-0f1d558ccf79</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAtjpiUBAAAA==" BrandID="1421700" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAJjgx2rAAAA==" FareBasis="RUINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAJjgx2rAAAA==" ProviderCode="ACH">uuid-3faa1eda-5424-4f61-b9df-f01f2e627da6</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAingx2rAAAA==" BrandID="1421700" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKA6hpiUBAAAA==" FareBasis="RUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKA6hpiUBAAAA==" ProviderCode="ACH">uuid-ee0fe7f2-b3a4-4312-b717-95c00dffe9da</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAvjpiUBAAAA==" BrandID="1421700" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKASjgx2rAAAA==" FareBasis="RUINT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKASjgx2rAAAA==" ProviderCode="ACH">uuid-69221eae-cc9b-45de-9971-1d5316d205a7</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAkngx2rAAAA==" BrandID="1421700" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKA+hpiUBAAAA==" FareBasis="RUINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKA+hpiUBAAAA==" ProviderCode="ACH">uuid-6d7e448d-d7af-4f95-8869-b9722903e00a</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAxjpiUBAAAA==" BrandID="1421700" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAWjgx2rAAAA==" FareBasis="RUINT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT4593.00" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAWjgx2rAAAA==" ProviderCode="ACH">uuid-9516b755-f0f0-4009-a704-13a2841d5951</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAmngx2rAAAA==" BrandID="1421700" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKACipiUBAAAA==" FareBasis="RUINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKACipiUBAAAA==" ProviderCode="ACH">uuid-6b13ff58-82be-41a2-985b-8dc74c400087</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKAzjpiUBAAAA==" BrandID="1421700" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAajgx2rAAAA==" FareBasis="RUINT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Flexible Fare" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAajgx2rAAAA==" ProviderCode="ACH">uuid-3b5c2ecf-11d4-4ccf-aee7-7d3e837da26c</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAongx2rAAAA==" BrandID="1421700" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKALipiUBAAAA==" FareBasis="RE0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKALipiUBAAAA==" ProviderCode="ACH">uuid-351ac078-6ed3-46f2-a2aa-a95692f2a458</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA1jpiUBAAAA==" BrandID="1421697" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAjjgx2rAAAA==" FareBasis="RE0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAjjgx2rAAAA==" ProviderCode="ACH">uuid-4d3556df-fe2c-490e-a618-f8380250bed8</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAqngx2rAAAA==" BrandID="1421697" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAPipiUBAAAA==" FareBasis="RE0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAPipiUBAAAA==" ProviderCode="ACH">uuid-fd950e72-8fc4-49c5-9aa4-c924d7944cab</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA3jpiUBAAAA==" BrandID="1421697" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKAnjgx2rAAAA==" FareBasis="RE0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKAnjgx2rAAAA==" ProviderCode="ACH">uuid-fad7e030-779a-4060-8772-f373143fd4d6</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAsngx2rAAAA==" BrandID="1421697" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKATipiUBAAAA==" FareBasis="RE0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKATipiUBAAAA==" ProviderCode="ACH">uuid-02342b25-108b-4e3d-9e3f-405b6094ad0b</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA5jpiUBAAAA==" BrandID="1421697" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKArjgx2rAAAA==" FareBasis="RE0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKArjgx2rAAAA==" ProviderCode="ACH">uuid-d114be5a-efc2-4901-9b1d-6327b8e1d25f</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAungx2rAAAA==" BrandID="1421697" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAcipiUBAAAA==" FareBasis="RE0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAcipiUBAAAA==" ProviderCode="ACH">uuid-af1a68fb-85ec-4264-a103-cbeab85044a6</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA7jpiUBAAAA==" BrandID="1421697" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKA0jgx2rAAAA==" FareBasis="RE0INT" PassengerTypeCode="ADT" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA0jgx2rAAAA==" ProviderCode="ACH">uuid-24ec5950-229f-409e-b349-0c5f0a2f8617</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAwngx2rAAAA==" BrandID="1421697" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAgipiUBAAAA==" FareBasis="RE0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAgipiUBAAAA==" ProviderCode="ACH">uuid-54de3e9f-6d98-4562-ad8b-44b25654ded4</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA9jpiUBAAAA==" BrandID="1421697" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKA4jgx2rAAAA==" FareBasis="RE0INT" PassengerTypeCode="CHD" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT6416.00" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA4jgx2rAAAA==" ProviderCode="ACH">uuid-e754222d-2fc2-4067-95b9-8588755b9d79</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKAyngx2rAAAA==" BrandID="1421697" UpSellBrandFound="false" />
     </air:FareInfo>
-    <air:FareInfo Key="NY36IAB3nDKAkipiUBAAAA==" FareBasis="RE0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T11:44:28.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
-      <air:FareRuleKey FareInfoRef="NY36IAB3nDKAkipiUBAAAA==" ProviderCode="ACH">uuid-4d03aaba-c693-4c98-825d-5d1053662dd9</air:FareRuleKey>
-      <air:Brand Key="NY36IAB3nDKA/jpiUBAAAA==" BrandID="1421697" UpSellBrandFound="false" />
+    <air:FareInfo Key="GMPyL/DEuDKA8jgx2rAAAA==" FareBasis="RE0INT" PassengerTypeCode="INF" Origin="DAC" Destination="CCU" EffectiveDate="2024-06-12T17:15:02.000+06:00" Amount="BDT0" PromotionalFare="false" FareFamily="Super 6E" SupplierCode="6E">
+      <air:FareRuleKey FareInfoRef="GMPyL/DEuDKA8jgx2rAAAA==" ProviderCode="ACH">uuid-bbddce95-1bf2-45ee-8f7b-bf1ae53270b1</air:FareRuleKey>
+      <air:Brand Key="GMPyL/DEuDKA0ngx2rAAAA==" BrandID="1421697" UpSellBrandFound="false" />
     </air:FareInfo>
   </air:FareInfoList>
   <air:HostTokenList>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAqipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:6462c77e-bd67-4ca2-8dbb-9a84b3d32aed</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAripiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:52045ca5-fa50-468a-ab7f-cb4ee10c5743</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAsipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:3eecfa8c-a445-41cf-bdf6-818d2c24d648</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAtipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:bd5dc69f-dec7-4ac4-9e33-2a9ecee3b9bc</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAuipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:8cc2b82a-cc2c-4aee-a466-a28bfb752417</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAvipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:b1cf8772-fad2-4f72-9c57-38dcf918ab4a</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAwipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:10d3e45a-0c9a-4b18-9cc3-61a02d69e38e</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAxipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:5627752d-b856-4fa2-b581-38f09a4c4634</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAyipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:bd5119a0-e254-4e51-a4b5-bdee9f1c058e</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKAzipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:a554af86-9fc8-454b-8ac7-e83310374ed2</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKA0ipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:84291a06-1505-4e62-9bf2-e60b514bb239</common_v52_0:HostToken>
-    <common_v52_0:HostToken Key="NY36IAB3nDKA1ipiUBAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:71d3c8f9-0fb6-4920-8da1-f11f6c930fed</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKACkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:4ef598f8-f153-4b8f-a00d-84279a13b4d9</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKADkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:2197ab35-969c-49bf-a163-6230444dd235</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAEkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:cf2a9c24-85c0-4796-8934-2c1f87859f00</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAFkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:0942bd2a-709e-4392-8f28-ae49c0466d95</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAGkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:b196b613-00f4-4a69-95fc-4761a868a82f</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAHkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:d735afe4-f010-4a6b-8dea-e54cadae21bb</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAIkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:02b93e6d-57da-40f0-b6b3-7f2995934570</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAJkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:89176cb2-1b16-4a7b-8f2d-04dfd10cf3b6</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAKkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:26c46ad5-d733-40f7-ab8c-121b1159cbda</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKALkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:5b0e276a-53d2-4907-9d44-33603e1e07a7</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKAMkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:cd1af5d8-eba7-4bd8-8b37-2d6679f73955</common_v52_0:HostToken>
+    <common_v52_0:HostToken Key="GMPyL/DEuDKANkgx2rAAAA==">NNS6E{IS###}BDT{CC###ET}ACHSDv01LPD1:2e599c17-a0ac-4941-9dff-c76c984a0e18</common_v52_0:HostToken>
   </air:HostTokenList>
   <air:APISRequirementsList>
-    <air:APISRequirements Key="NY36IAB3nDKA3ipiUBAAAA==" Level="Supported">
+    <air:APISRequirements Key="GMPyL/DEuDKAPkgx2rAAAA==" Level="Supported">
       <air:Document Sequence="1" Type="Passport" Level="Supported" />
     </air:APISRequirements>
   </air:APISRequirementsList>
   <air:RouteList>
-    <air:Route Key="NY36IAB3nDKA2ipiUBAAAA==">
-      <air:Leg Key="NY36IAB3nDKAcfpiUBAAAA==" Group="0" Origin="DAC" Destination="CCU" />
+    <air:Route Key="GMPyL/DEuDKAOkgx2rAAAA==">
+      <air:Leg Key="GMPyL/DEuDKA0ggx2rAAAA==" Group="0" Origin="DAC" Destination="CCU" />
     </air:Route>
   </air:RouteList>
-  <air:AirPricingSolution Key="NY36IAB3nDKAZfpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT34816.00" BasePrice="BDT12764.00" ApproximateTotalPrice="BDT34816.00" ApproximateBasePrice="BDT12764" Taxes="BDT16720.00" Fees="BDT5332.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5332.00">
-    <air:Journey TravelTime="P0DT0H55M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAafpiUBAAAA==" />
-    </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAdfpiUBAAAA==" TotalPrice="BDT7871.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT7871.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAffpiUBAAAA==" />
-      <air:BookingInfo BookingCode="T" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAffpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAqipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAefpiUBAAAA==" SupplierCode="6E" />
-      <air:PassengerType Code="ADT" />
-      <air:PassengerType Code="ADT" />
-    </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAhfpiUBAAAA==" TotalPrice="BDT6552.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT6552.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT3680.00" Fees="BDT-319.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-319.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAjfpiUBAAAA==" />
-      <air:BookingInfo BookingCode="T" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAjfpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAqipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAifpiUBAAAA==" SupplierCode="6E" />
-      <air:PassengerType Code="CNN" Age="8" />
-      <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKAlfpiUBAAAA==" Amount="BDT-319.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAmfpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAnfpiUBAAAA==" />
-      <air:BookingInfo BookingCode="T" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAnfpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAqipiUBAAAA==" />
-      <air:PassengerType Code="INF" Age="1" />
-      <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKApfpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAqfpiUBAAAA==" Amount="BDT-638.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKArfpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAsfpiUBAAAA==" SupplierCode="6E" />
-  </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAtfpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT34816.00" BasePrice="BDT12764.00" ApproximateTotalPrice="BDT34816.00" ApproximateBasePrice="BDT12764" Taxes="BDT16720.00" Fees="BDT5332.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5332.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKAxggx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT34816.00" BasePrice="BDT12764.00" ApproximateTotalPrice="BDT34816.00" ApproximateBasePrice="BDT12764" Taxes="BDT16720.00" Fees="BDT5332.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5332.00">
     <air:Journey TravelTime="P0DT1H0M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAufpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAyggx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAwfpiUBAAAA==" TotalPrice="BDT7871.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT7871.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAyfpiUBAAAA==" />
-      <air:BookingInfo BookingCode="T" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAyfpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAwipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAxfpiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKA1ggx2rAAAA==" TotalPrice="BDT7871.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT7871.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA3ggx2rAAAA==" />
+      <air:BookingInfo BookingCode="T" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA3ggx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAIkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKA2ggx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKA0fpiUBAAAA==" TotalPrice="BDT6552.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT6552.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT3680.00" Fees="BDT-319.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-319.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKA2fpiUBAAAA==" />
-      <air:BookingInfo BookingCode="T" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKA2fpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAwipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKA1fpiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKA5ggx2rAAAA==" TotalPrice="BDT6552.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT6552.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT3680.00" Fees="BDT-319.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-319.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA7ggx2rAAAA==" />
+      <air:BookingInfo BookingCode="T" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA7ggx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAIkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKA6ggx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKA4fpiUBAAAA==" Amount="BDT-319.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKA9ggx2rAAAA==" Amount="BDT-319.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKA5fpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKA6fpiUBAAAA==" />
-      <air:BookingInfo BookingCode="T" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKA6fpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAwipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKA+ggx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA/ggx2rAAAA==" />
+      <air:BookingInfo BookingCode="T" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA/ggx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAIkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKA8fpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKABhgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKA9fpiUBAAAA==" Amount="BDT-638.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKA+fpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKA/fpiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAChgx2rAAAA==" Amount="BDT-638.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKADhgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAEhgx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAAgpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT35348.00" BasePrice="BDT13324.00" ApproximateTotalPrice="BDT35348.00" ApproximateBasePrice="BDT13324" Taxes="BDT16720.00" Fees="BDT5304.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5304.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKAFhgx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT34816.00" BasePrice="BDT12764.00" ApproximateTotalPrice="BDT34816.00" ApproximateBasePrice="BDT12764" Taxes="BDT16720.00" Fees="BDT5332.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5332.00">
     <air:Journey TravelTime="P0DT0H55M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAafpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAGhgx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKABgpiUBAAAA==" TotalPrice="BDT8011.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT8011.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKADgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Q" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKADgpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAripiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKACgpiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAIhgx2rAAAA==" TotalPrice="BDT7871.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT7871.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAKhgx2rAAAA==" />
+      <air:BookingInfo BookingCode="T" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAKhgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKACkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKAJhgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAFgpiUBAAAA==" TotalPrice="BDT6678.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT6678.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT3680.00" Fees="BDT-333.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-333.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAHgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Q" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAHgpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAripiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAGgpiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAMhgx2rAAAA==" TotalPrice="BDT6552.00" BasePrice="BDT3191.00" ApproximateTotalPrice="BDT6552.00" ApproximateBasePrice="BDT3191.00" Taxes="BDT3680.00" Fees="BDT-319.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-319.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAOhgx2rAAAA==" />
+      <air:BookingInfo BookingCode="T" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAOhgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKACkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKANhgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKAJgpiUBAAAA==" Amount="BDT-333.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAQhgx2rAAAA==" Amount="BDT-319.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAKgpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKALgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Q" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKALgpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAripiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKARhgx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAShgx2rAAAA==" />
+      <air:BookingInfo BookingCode="T" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAShgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKACkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKANgpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAUhgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAOgpiUBAAAA==" Amount="BDT-666.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAPgpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAQgpiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAVhgx2rAAAA==" Amount="BDT-638.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAWhgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAXhgx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKARgpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT35348.00" BasePrice="BDT13324.00" ApproximateTotalPrice="BDT35348.00" ApproximateBasePrice="BDT13324" Taxes="BDT16720.00" Fees="BDT5304.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5304.00">
-    <air:Journey TravelTime="P0DT1H0M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAufpiUBAAAA==" />
-    </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKASgpiUBAAAA==" TotalPrice="BDT8011.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT8011.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAUgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Q" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAUgpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAxipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKATgpiUBAAAA==" SupplierCode="6E" />
-      <air:PassengerType Code="ADT" />
-      <air:PassengerType Code="ADT" />
-    </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAWgpiUBAAAA==" TotalPrice="BDT6678.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT6678.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT3680.00" Fees="BDT-333.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-333.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAYgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Q" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAYgpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAxipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAXgpiUBAAAA==" SupplierCode="6E" />
-      <air:PassengerType Code="CNN" Age="8" />
-      <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKAagpiUBAAAA==" Amount="BDT-333.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAbgpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAcgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Q" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAcgpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAxipiUBAAAA==" />
-      <air:PassengerType Code="INF" Age="1" />
-      <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAegpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAfgpiUBAAAA==" Amount="BDT-666.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAggpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAhgpiUBAAAA==" SupplierCode="6E" />
-  </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAigpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT36412.00" BasePrice="BDT14444.00" ApproximateTotalPrice="BDT36412.00" ApproximateBasePrice="BDT14444" Taxes="BDT16720.00" Fees="BDT5248.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5248.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKAYhgx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT35348.00" BasePrice="BDT13324.00" ApproximateTotalPrice="BDT35348.00" ApproximateBasePrice="BDT13324" Taxes="BDT16720.00" Fees="BDT5304.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5304.00">
     <air:Journey TravelTime="P0DT0H55M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAafpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAGhgx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAjgpiUBAAAA==" TotalPrice="BDT8291.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT8291.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAlgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="X" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAlgpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAsipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAkgpiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAZhgx2rAAAA==" TotalPrice="BDT8011.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT8011.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAbhgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Q" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAbhgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKADkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKAahgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAngpiUBAAAA==" TotalPrice="BDT6930.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT6930.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT3680.00" Fees="BDT-361.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-361.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKApgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="X" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKApgpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAsipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAogpiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAdhgx2rAAAA==" TotalPrice="BDT6678.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT6678.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT3680.00" Fees="BDT-333.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-333.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAfhgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Q" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAfhgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKADkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAehgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKArgpiUBAAAA==" Amount="BDT-361.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAhhgx2rAAAA==" Amount="BDT-333.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAsgpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAtgpiUBAAAA==" />
-      <air:BookingInfo BookingCode="X" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAtgpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAsipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAihgx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAjhgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Q" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAjhgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKADkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAvgpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAlhgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAwgpiUBAAAA==" Amount="BDT-722.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAxgpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAygpiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAmhgx2rAAAA==" Amount="BDT-666.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAnhgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAohgx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAzgpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT36412.00" BasePrice="BDT14444.00" ApproximateTotalPrice="BDT36412.00" ApproximateBasePrice="BDT14444" Taxes="BDT16720.00" Fees="BDT5248.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5248.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKAphgx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT35348.00" BasePrice="BDT13324.00" ApproximateTotalPrice="BDT35348.00" ApproximateBasePrice="BDT13324" Taxes="BDT16720.00" Fees="BDT5304.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5304.00">
     <air:Journey TravelTime="P0DT1H0M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAufpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAyggx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKA0gpiUBAAAA==" TotalPrice="BDT8291.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT8291.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKA2gpiUBAAAA==" />
-      <air:BookingInfo BookingCode="X" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKA2gpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAyipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKA1gpiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAqhgx2rAAAA==" TotalPrice="BDT8011.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT8011.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAshgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Q" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAshgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAJkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKArhgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKA4gpiUBAAAA==" TotalPrice="BDT6930.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT6930.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT3680.00" Fees="BDT-361.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-361.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKA6gpiUBAAAA==" />
-      <air:BookingInfo BookingCode="X" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKA6gpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAyipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKA5gpiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAuhgx2rAAAA==" TotalPrice="BDT6678.00" BasePrice="BDT3331.00" ApproximateTotalPrice="BDT6678.00" ApproximateBasePrice="BDT3331.00" Taxes="BDT3680.00" Fees="BDT-333.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-333.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAwhgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Q" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAwhgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAJkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAvhgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKA8gpiUBAAAA==" Amount="BDT-361.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAyhgx2rAAAA==" Amount="BDT-333.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKA9gpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKA+gpiUBAAAA==" />
-      <air:BookingInfo BookingCode="X" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKA+gpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAyipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAzhgx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA0hgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Q" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA0hgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAJkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAAhpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKA2hgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKABhpiUBAAAA==" Amount="BDT-722.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAChpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKADhpiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKA3hgx2rAAAA==" Amount="BDT-666.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKA4hgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKA5hgx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAEhpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT38544.00" BasePrice="BDT16688.00" ApproximateTotalPrice="BDT38544.00" ApproximateBasePrice="BDT16688" Taxes="BDT16720.00" Fees="BDT5136.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5136.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKA6hgx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT36412.00" BasePrice="BDT14444.00" ApproximateTotalPrice="BDT36412.00" ApproximateBasePrice="BDT14444" Taxes="BDT16720.00" Fees="BDT5248.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5248.00">
     <air:Journey TravelTime="P0DT0H55M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAafpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAGhgx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAFhpiUBAAAA==" TotalPrice="BDT8852.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT8852.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAHhpiUBAAAA==" />
-      <air:BookingInfo BookingCode="M" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAHhpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAtipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAGhpiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKA7hgx2rAAAA==" TotalPrice="BDT8291.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT8291.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA9hgx2rAAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA9hgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAEkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKA8hgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAJhpiUBAAAA==" TotalPrice="BDT7435.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT7435.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT3680.00" Fees="BDT-417.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-417.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKALhpiUBAAAA==" />
-      <air:BookingInfo BookingCode="M" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKALhpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAtipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAKhpiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKA/hgx2rAAAA==" TotalPrice="BDT6930.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT6930.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT3680.00" Fees="BDT-361.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-361.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKABigx2rAAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKABigx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAEkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAAigx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKANhpiUBAAAA==" Amount="BDT-417.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKADigx2rAAAA==" Amount="BDT-361.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAOhpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAPhpiUBAAAA==" />
-      <air:BookingInfo BookingCode="M" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAPhpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAtipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAEigx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAFigx2rAAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAFigx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAEkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKARhpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAHigx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAShpiUBAAAA==" Amount="BDT-834.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAThpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAUhpiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAIigx2rAAAA==" Amount="BDT-722.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAJigx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAKigx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAVhpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT38544.00" BasePrice="BDT16688.00" ApproximateTotalPrice="BDT38544.00" ApproximateBasePrice="BDT16688" Taxes="BDT16720.00" Fees="BDT5136.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5136.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKALigx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT36412.00" BasePrice="BDT14444.00" ApproximateTotalPrice="BDT36412.00" ApproximateBasePrice="BDT14444" Taxes="BDT16720.00" Fees="BDT5248.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5248.00">
     <air:Journey TravelTime="P0DT1H0M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAufpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAyggx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAWhpiUBAAAA==" TotalPrice="BDT8852.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT8852.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAYhpiUBAAAA==" />
-      <air:BookingInfo BookingCode="M" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAYhpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAzipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAXhpiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAMigx2rAAAA==" TotalPrice="BDT8291.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT8291.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAOigx2rAAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAOigx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAKkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKANigx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAahpiUBAAAA==" TotalPrice="BDT7435.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT7435.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT3680.00" Fees="BDT-417.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-417.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAchpiUBAAAA==" />
-      <air:BookingInfo BookingCode="M" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAchpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAzipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAbhpiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAQigx2rAAAA==" TotalPrice="BDT6930.00" BasePrice="BDT3611.00" ApproximateTotalPrice="BDT6930.00" ApproximateBasePrice="BDT3611.00" Taxes="BDT3680.00" Fees="BDT-361.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-361.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKASigx2rAAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKASigx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAKkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKARigx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKAehpiUBAAAA==" Amount="BDT-417.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAUigx2rAAAA==" Amount="BDT-361.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAfhpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAghpiUBAAAA==" />
-      <air:BookingInfo BookingCode="M" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAghpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKAzipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAVigx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAWigx2rAAAA==" />
+      <air:BookingInfo BookingCode="X" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAWigx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAKkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAihpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAYigx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAjhpiUBAAAA==" Amount="BDT-834.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAkhpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAlhpiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAZigx2rAAAA==" Amount="BDT-722.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAaigx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAbigx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAmhpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT40144.00" BasePrice="BDT18372.00" ApproximateTotalPrice="BDT40144.00" ApproximateBasePrice="BDT18372" Taxes="BDT16720.00" Fees="BDT5052.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5052.00">
-    <air:Journey TravelTime="P0DT1H0M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAufpiUBAAAA==" />
-    </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAnhpiUBAAAA==" TotalPrice="BDT9273.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT9273.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAphpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Y" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAphpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKA0ipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAohpiUBAAAA==" SupplierCode="6E" />
-      <air:PassengerType Code="ADT" />
-      <air:PassengerType Code="ADT" />
-    </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKArhpiUBAAAA==" TotalPrice="BDT7814.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT7814.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT3680.00" Fees="BDT-459.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-459.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAthpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Y" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAthpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKA0ipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAshpiUBAAAA==" SupplierCode="6E" />
-      <air:PassengerType Code="CNN" Age="8" />
-      <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKAvhpiUBAAAA==" Amount="BDT-459.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAwhpiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAxhpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Y" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAxhpiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKA0ipiUBAAAA==" />
-      <air:PassengerType Code="INF" Age="1" />
-      <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAzhpiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKA0hpiUBAAAA==" Amount="BDT-918.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKA1hpiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKA2hpiUBAAAA==" SupplierCode="6E" />
-  </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKA3hpiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT40144.00" BasePrice="BDT18372.00" ApproximateTotalPrice="BDT40144.00" ApproximateBasePrice="BDT18372" Taxes="BDT16720.00" Fees="BDT5052.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5052.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKAcigx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT38544.00" BasePrice="BDT16688.00" ApproximateTotalPrice="BDT38544.00" ApproximateBasePrice="BDT16688" Taxes="BDT16720.00" Fees="BDT5136.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5136.00">
     <air:Journey TravelTime="P0DT0H55M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAafpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAGhgx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKA4hpiUBAAAA==" TotalPrice="BDT9273.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT9273.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKA6hpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Y" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKA6hpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAuipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKA5hpiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAdigx2rAAAA==" TotalPrice="BDT8852.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT8852.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAfigx2rAAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAfigx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAFkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKAeigx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKA8hpiUBAAAA==" TotalPrice="BDT7814.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT7814.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT3680.00" Fees="BDT-459.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-459.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKA+hpiUBAAAA==" />
-      <air:BookingInfo BookingCode="Y" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKA+hpiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAuipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKA9hpiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAhigx2rAAAA==" TotalPrice="BDT7435.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT7435.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT3680.00" Fees="BDT-417.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-417.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAjigx2rAAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAjigx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAFkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAiigx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKAAipiUBAAAA==" Amount="BDT-459.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAligx2rAAAA==" Amount="BDT-417.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKABipiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKACipiUBAAAA==" />
-      <air:BookingInfo BookingCode="Y" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKACipiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAuipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAmigx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAnigx2rAAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAnigx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAFkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAEipiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKApigx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAFipiUBAAAA==" Amount="BDT-918.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAGipiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAHipiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAqigx2rAAAA==" Amount="BDT-834.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKArigx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAsigx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAIipiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT47070.00" BasePrice="BDT25664.00" ApproximateTotalPrice="BDT47070.00" ApproximateBasePrice="BDT25664" Taxes="BDT16720.00" Fees="BDT4686.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT4686.00">
+  <air:AirPricingSolution Key="GMPyL/DEuDKAtigx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT38544.00" BasePrice="BDT16688.00" ApproximateTotalPrice="BDT38544.00" ApproximateBasePrice="BDT16688" Taxes="BDT16720.00" Fees="BDT5136.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5136.00">
     <air:Journey TravelTime="P0DT1H0M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAufpiUBAAAA==" />
+      <air:AirSegmentRef Key="GMPyL/DEuDKAyggx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAJipiUBAAAA==" TotalPrice="BDT11096.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT11096.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKALipiUBAAAA==" />
-      <air:BookingInfo BookingCode="O" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKALipiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKA1ipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAKipiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAuigx2rAAAA==" TotalPrice="BDT8852.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT8852.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAwigx2rAAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAwigx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKALkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKAvigx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKANipiUBAAAA==" TotalPrice="BDT9454.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT9454.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT3680.00" Fees="BDT-642.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-642.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAPipiUBAAAA==" />
-      <air:BookingInfo BookingCode="O" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAPipiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKA1ipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAOipiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAyigx2rAAAA==" TotalPrice="BDT7435.00" BasePrice="BDT4172.00" ApproximateTotalPrice="BDT7435.00" ApproximateBasePrice="BDT4172.00" Taxes="BDT3680.00" Fees="BDT-417.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-417.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA0igx2rAAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA0igx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKALkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAzigx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKARipiUBAAAA==" Amount="BDT-642.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKA2igx2rAAAA==" Amount="BDT-417.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKASipiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKATipiUBAAAA==" />
-      <air:BookingInfo BookingCode="O" BookingCount="54" CabinClass="Economy" FareInfoRef="NY36IAB3nDKATipiUBAAAA==" SegmentRef="NY36IAB3nDKAufpiUBAAAA==" HostTokenRef="NY36IAB3nDKA1ipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKA3igx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA4igx2rAAAA==" />
+      <air:BookingInfo BookingCode="M" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA4igx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKALkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAVipiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKA6igx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAWipiUBAAAA==" Amount="BDT-1284.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAXipiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKAYipiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKA7igx2rAAAA==" Amount="BDT-834.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKA8igx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKA9igx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
-  <air:AirPricingSolution Key="NY36IAB3nDKAZipiUBAAAA==" CompleteItinerary="true" TotalPrice="BDT47070.00" BasePrice="BDT25664.00" ApproximateTotalPrice="BDT47070.00" ApproximateBasePrice="BDT25664" Taxes="BDT16720.00" Fees="BDT4686.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT4686.00">
-    <air:Journey TravelTime="P0DT0H55M0S">
-      <air:AirSegmentRef Key="NY36IAB3nDKAafpiUBAAAA==" />
+  <air:AirPricingSolution Key="GMPyL/DEuDKA+igx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT40144.00" BasePrice="BDT18372.00" ApproximateTotalPrice="BDT40144.00" ApproximateBasePrice="BDT18372" Taxes="BDT16720.00" Fees="BDT5052.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5052.00">
+    <air:Journey TravelTime="P0DT1H0M0S">
+      <air:AirSegmentRef Key="GMPyL/DEuDKAyggx2rAAAA==" />
     </air:Journey>
-    <air:LegRef Key="NY36IAB3nDKAcfpiUBAAAA==" />
-    <air:AirPricingInfo Key="NY36IAB3nDKAaipiUBAAAA==" TotalPrice="BDT11096.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT11096.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAcipiUBAAAA==" />
-      <air:BookingInfo BookingCode="O" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAcipiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAvipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="NY36IAB3nDKAbipiUBAAAA==" SupplierCode="6E" />
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKA/igx2rAAAA==" TotalPrice="BDT9273.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT9273.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKABjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKABjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAMkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKAAjgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="ADT" />
       <air:PassengerType Code="ADT" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAeipiUBAAAA==" TotalPrice="BDT9454.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT9454.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT3680.00" Fees="BDT-642.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-642.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAgipiUBAAAA==" />
-      <air:BookingInfo BookingCode="O" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAgipiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAvipiUBAAAA==" />
-      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="NY36IAB3nDKAfipiUBAAAA==" SupplierCode="6E" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKADjgx2rAAAA==" TotalPrice="BDT7814.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT7814.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT3680.00" Fees="BDT-459.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-459.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAFjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAFjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAMkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAEjgx2rAAAA==" SupplierCode="6E" />
       <air:PassengerType Code="CNN" Age="8" />
       <air:PassengerType Code="CNN" Age="8" />
-      <air:FeeInfo Key="NY36IAB3nDKAiipiUBAAAA==" Amount="BDT-642.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKAHjgx2rAAAA==" Amount="BDT-459.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:AirPricingInfo Key="NY36IAB3nDKAjipiUBAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
-      <air:FareInfoRef Key="NY36IAB3nDKAkipiUBAAAA==" />
-      <air:BookingInfo BookingCode="O" BookingCount="45" CabinClass="Economy" FareInfoRef="NY36IAB3nDKAkipiUBAAAA==" SegmentRef="NY36IAB3nDKAafpiUBAAAA==" HostTokenRef="NY36IAB3nDKAvipiUBAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAIjgx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAJjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAJjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKAMkgx2rAAAA==" />
       <air:PassengerType Code="INF" Age="1" />
       <air:PassengerType Code="INF" Age="1" />
-      <air:FeeInfo Key="NY36IAB3nDKAmipiUBAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+      <air:FeeInfo Key="GMPyL/DEuDKALjgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
     </air:AirPricingInfo>
-    <air:FeeInfo Key="NY36IAB3nDKAnipiUBAAAA==" Amount="BDT-1284.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
-    <air:FeeInfo Key="NY36IAB3nDKAoipiUBAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
-    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="NY36IAB3nDKApipiUBAAAA==" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAMjgx2rAAAA==" Amount="BDT-918.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKANjgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAOjgx2rAAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="GMPyL/DEuDKAPjgx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT40144.00" BasePrice="BDT18372.00" ApproximateTotalPrice="BDT40144.00" ApproximateBasePrice="BDT18372" Taxes="BDT16720.00" Fees="BDT5052.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT5052.00">
+    <air:Journey TravelTime="P0DT0H55M0S">
+      <air:AirSegmentRef Key="GMPyL/DEuDKAGhgx2rAAAA==" />
+    </air:Journey>
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAQjgx2rAAAA==" TotalPrice="BDT9273.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT9273.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKASjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKASjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAGkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKARjgx2rAAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:AirPricingInfo Key="GMPyL/DEuDKAUjgx2rAAAA==" TotalPrice="BDT7814.00" BasePrice="BDT4593.00" ApproximateTotalPrice="BDT7814.00" ApproximateBasePrice="BDT4593.00" Taxes="BDT3680.00" Fees="BDT-459.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-459.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAWjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAWjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAGkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAVjgx2rAAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="CNN" Age="8" />
+      <air:PassengerType Code="CNN" Age="8" />
+      <air:FeeInfo Key="GMPyL/DEuDKAYjgx2rAAAA==" Amount="BDT-459.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    </air:AirPricingInfo>
+    <air:AirPricingInfo Key="GMPyL/DEuDKAZjgx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAajgx2rAAAA==" />
+      <air:BookingInfo BookingCode="Y" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAajgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAGkgx2rAAAA==" />
+      <air:PassengerType Code="INF" Age="1" />
+      <air:PassengerType Code="INF" Age="1" />
+      <air:FeeInfo Key="GMPyL/DEuDKAcjgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    </air:AirPricingInfo>
+    <air:FeeInfo Key="GMPyL/DEuDKAdjgx2rAAAA==" Amount="BDT-918.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAejgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAfjgx2rAAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="GMPyL/DEuDKAgjgx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT47070.00" BasePrice="BDT25664.00" ApproximateTotalPrice="BDT47070.00" ApproximateBasePrice="BDT25664" Taxes="BDT16720.00" Fees="BDT4686.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT4686.00">
+    <air:Journey TravelTime="P0DT1H0M0S">
+      <air:AirSegmentRef Key="GMPyL/DEuDKAyggx2rAAAA==" />
+    </air:Journey>
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAhjgx2rAAAA==" TotalPrice="BDT11096.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT11096.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAjjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAjjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKANkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKAijgx2rAAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:AirPricingInfo Key="GMPyL/DEuDKAljgx2rAAAA==" TotalPrice="BDT9454.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT9454.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT3680.00" Fees="BDT-642.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-642.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKAnjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKAnjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKANkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKAmjgx2rAAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="CNN" Age="8" />
+      <air:PassengerType Code="CNN" Age="8" />
+      <air:FeeInfo Key="GMPyL/DEuDKApjgx2rAAAA==" Amount="BDT-642.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    </air:AirPricingInfo>
+    <air:AirPricingInfo Key="GMPyL/DEuDKAqjgx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKArjgx2rAAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="54" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKArjgx2rAAAA==" SegmentRef="GMPyL/DEuDKAyggx2rAAAA==" HostTokenRef="GMPyL/DEuDKANkgx2rAAAA==" />
+      <air:PassengerType Code="INF" Age="1" />
+      <air:PassengerType Code="INF" Age="1" />
+      <air:FeeInfo Key="GMPyL/DEuDKAtjgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    </air:AirPricingInfo>
+    <air:FeeInfo Key="GMPyL/DEuDKAujgx2rAAAA==" Amount="BDT-1284.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAvjgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKAwjgx2rAAAA==" SupplierCode="6E" />
+  </air:AirPricingSolution>
+  <air:AirPricingSolution Key="GMPyL/DEuDKAxjgx2rAAAA==" CompleteItinerary="true" TotalPrice="BDT47070.00" BasePrice="BDT25664.00" ApproximateTotalPrice="BDT47070.00" ApproximateBasePrice="BDT25664" Taxes="BDT16720.00" Fees="BDT4686.00" ApproximateTaxes="BDT16720.00" ApproximateFees="BDT4686.00">
+    <air:Journey TravelTime="P0DT0H55M0S">
+      <air:AirSegmentRef Key="GMPyL/DEuDKAGhgx2rAAAA==" />
+    </air:Journey>
+    <air:LegRef Key="GMPyL/DEuDKA0ggx2rAAAA==" />
+    <air:AirPricingInfo Key="GMPyL/DEuDKAyjgx2rAAAA==" TotalPrice="BDT11096.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT11096.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT4680.00" ApproximateTaxes="BDT4680.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA0jgx2rAAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA0jgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAHkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT4680.00" Key="GMPyL/DEuDKAzjgx2rAAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="ADT" />
+      <air:PassengerType Code="ADT" />
+    </air:AirPricingInfo>
+    <air:AirPricingInfo Key="GMPyL/DEuDKA2jgx2rAAAA==" TotalPrice="BDT9454.00" BasePrice="BDT6416.00" ApproximateTotalPrice="BDT9454.00" ApproximateBasePrice="BDT6416.00" Taxes="BDT3680.00" Fees="BDT-642.00" ApproximateTaxes="BDT3680.00" ApproximateFees="BDT-642.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA4jgx2rAAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA4jgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAHkgx2rAAAA==" />
+      <air:TaxInfo Category="BD" Amount="BDT3680.00" Key="GMPyL/DEuDKA3jgx2rAAAA==" SupplierCode="6E" />
+      <air:PassengerType Code="CNN" Age="8" />
+      <air:PassengerType Code="CNN" Age="8" />
+      <air:FeeInfo Key="GMPyL/DEuDKA6jgx2rAAAA==" Amount="BDT-642.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    </air:AirPricingInfo>
+    <air:AirPricingInfo Key="GMPyL/DEuDKA7jgx2rAAAA==" TotalPrice="BDT2985.00" BasePrice="BDT0" ApproximateTotalPrice="BDT2985.00" ApproximateBasePrice="BDT0" Fees="BDT2985.00" ApproximateFees="BDT2985.00" PricingMethod="Auto" ProviderCode="ACH">
+      <air:FareInfoRef Key="GMPyL/DEuDKA8jgx2rAAAA==" />
+      <air:BookingInfo BookingCode="O" BookingCount="45" CabinClass="Economy" FareInfoRef="GMPyL/DEuDKA8jgx2rAAAA==" SegmentRef="GMPyL/DEuDKAGhgx2rAAAA==" HostTokenRef="GMPyL/DEuDKAHkgx2rAAAA==" />
+      <air:PassengerType Code="INF" Age="1" />
+      <air:PassengerType Code="INF" Age="1" />
+      <air:FeeInfo Key="GMPyL/DEuDKA+jgx2rAAAA==" Amount="BDT2985.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    </air:AirPricingInfo>
+    <air:FeeInfo Key="GMPyL/DEuDKA/jgx2rAAAA==" Amount="BDT-1284.00" Code="10PRCT" ProviderCode="ACH" SupplierCode="6E" />
+    <air:FeeInfo Key="GMPyL/DEuDKAAkgx2rAAAA==" Amount="BDT5970.00" Code="INF" ProviderCode="ACH" SupplierCode="6E" />
+    <air:TaxInfo Category="BD" Amount="BDT16720.00" Key="GMPyL/DEuDKABkgx2rAAAA==" SupplierCode="6E" />
   </air:AirPricingSolution>
   <air:BrandList>
-    <air:Brand Key="NY36IAB3nDKABkpiUBAAAA==" BrandID="1421700" Name="Flexi Fare" BrandedDetailsAvailable="true" Carrier="6E">
+    <air:Brand Key="GMPyL/DEuDKAHvgx2rAAAA==" BrandID="1421700" Name="Flexi Fare" BrandedDetailsAvailable="true" Carrier="6E">
       <air:Title Type="External" LanguageCode="EN">Flexible Fare</air:Title>
       <air:Title Type="Short" LanguageCode="EN">Flexi Fare</air:Title>
       <air:Text Type="Upsell" LanguageCode="EN">Attractive Fare inclusive of Meal, Seat, Flexibility to Change and lower Cancellation Fees</air:Text>
@@ -602,7 +602,7 @@ Travel from India to US via IST, baggage allowance will be 2 piece of 23 Kgs eac
       <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281032.jpg</air:ImageLocation>
       <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281032.jpg</air:ImageLocation>
     </air:Brand>
-    <air:Brand Key="NY36IAB3nDKADkpiUBAAAA==" BrandID="1421702" Name="Regular Fare" BrandedDetailsAvailable="true" Carrier="6E">
+    <air:Brand Key="GMPyL/DEuDKAJvgx2rAAAA==" BrandID="1421702" Name="Regular Fare" BrandedDetailsAvailable="true" Carrier="6E">
       <air:Title Type="External" LanguageCode="EN">Regular Fare</air:Title>
       <air:Title Type="Short" LanguageCode="EN">Regular</air:Title>
       <air:Text Type="Upsell" LanguageCode="EN">Book our affordable fares and fly hassle free, On-Time Every Time!</air:Text>
@@ -622,7 +622,7 @@ Travel from India to US via IST, baggage allowance will be 2 piece of 23 Kgs eac
       <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281015.jpg</air:ImageLocation>
       <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281015.jpg</air:ImageLocation>
     </air:Brand>
-    <air:Brand Key="NY36IAB3nDKAFkpiUBAAAA==" BrandID="1421698" Name="Promo Fare" BrandedDetailsAvailable="true" Carrier="6E">
+    <air:Brand Key="GMPyL/DEuDKALvgx2rAAAA==" BrandID="1421698" Name="Promo Fare" BrandedDetailsAvailable="true" Carrier="6E">
       <air:Title Type="External" LanguageCode="EN">Promo Fare</air:Title>
       <air:Title Type="Short" LanguageCode="EN">Promo Fare</air:Title>
       <air:Text Type="Upsell" LanguageCode="EN">Now avail our massive discounted Promo fare to have a hassle free flying with check-in &amp; hand baggage allowance.</air:Text>
@@ -644,7 +644,7 @@ Travel from India to US via IST, baggage allowance will be 2 piece of 23 Kgs eac
       <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281016.jpg</air:ImageLocation>
       <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281016.jpg</air:ImageLocation>
     </air:Brand>
-    <air:Brand Key="NY36IAB3nDKAHkpiUBAAAA==" BrandID="1421697" Name="Super 6E" BrandedDetailsAvailable="true" Carrier="6E">
+    <air:Brand Key="GMPyL/DEuDKANvgx2rAAAA==" BrandID="1421697" Name="Super 6E" BrandedDetailsAvailable="true" Carrier="6E">
       <air:Title Type="External" LanguageCode="EN">Super 6E</air:Title>
       <air:Title Type="Short" LanguageCode="EN">Super 6E</air:Title>
       <air:Text Type="Upsell" LanguageCode="EN">Up your game with Super 6E.
@@ -670,7 +670,7 @@ If changed/cancelled at least 4hrs before the scheduled departure for Internatio
       <air:ImageLocation Type="Consumer" ImageWidth="215" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_large_299929.jpg</air:ImageLocation>
       <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_299928.jpg</air:ImageLocation>
     </air:Brand>
-    <air:Brand Key="NY36IAB3nDKAJkpiUBAAAA==" BrandID="1421703" Name="SME" BrandedDetailsAvailable="true" Carrier="6E">
+    <air:Brand Key="GMPyL/DEuDKAPvgx2rAAAA==" BrandID="1421703" Name="SME" BrandedDetailsAvailable="true" Carrier="6E">
       <air:Title Type="External" LanguageCode="EN">SME</air:Title>
       <air:Title Type="Short" LanguageCode="EN">SME</air:Title>
       <air:Text Type="Upsell" LanguageCode="EN">A best-in-class deal for business travellers.</air:Text>
@@ -695,7 +695,7 @@ Travel from India to US via IST, baggage allowance will be 2 piece of 23 Kgs eac
       <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="133">https://cdn.travelport.com/indigo/6E_general_small_367230.jpg</air:ImageLocation>
       <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="133">https://cdn.travelport.com/indigo/6E_general_small_367230.jpg</air:ImageLocation>
     </air:Brand>
-    <air:Brand Key="NY36IAB3nDKALkpiUBAAAA==" BrandID="1421706" Name="Family Fare" BrandedDetailsAvailable="true" Carrier="6E">
+    <air:Brand Key="GMPyL/DEuDKARvgx2rAAAA==" BrandID="1421706" Name="Family Fare" BrandedDetailsAvailable="true" Carrier="6E">
       <air:Title Type="External" LanguageCode="EN">Family Fare</air:Title>
       <air:Title Type="Short" LanguageCode="EN">Family</air:Title>
       <air:Text Type="Upsell" LanguageCode="EN">Book 4 or more passengers to get discounted family fare</air:Text>
@@ -710,8 +710,7 @@ Travel from India to US via IST, baggage allowance will be 2 piece of 23 Kgs eac
 - Rescheduling allowed with difference of fare, if any
 - Charges apply if cancelled at least 1 hr before the scheduled departure.
 - Refundable adhering to Terms &amp; conditions
-• Please note that if the flight is operated by another airline, then the onboard product or service may be different to that described above. The content on this screen is for information purposes only. Please validate brands and ancillaries at Fare Quote.
-</air:Text>
+• Please note that if the flight is operated by another airline, then the onboard product or service may be different to that described above. The content on this screen is for information purposes only. Please validate brands and ancillaries at Fare Quote.</air:Text>
       <air:Text Type="Strapline" LanguageCode="EN">the family that travels together stays together</air:Text>
       <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281018.jpg</air:ImageLocation>
       <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/indigo/6E_general_medium_281018.jpg</air:ImageLocation>
