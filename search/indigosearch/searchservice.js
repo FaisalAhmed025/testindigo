@@ -273,15 +273,15 @@ const asfterSearch = async (req,res) => {
         isGroupFare: false,
         partiallyEligible: false,
         route:  routes || [],
-        // amenities: amenitiesArray,
+        amenities: amenitiesArray,
         brandCount: uniqueBrandArray.length,
         brands: uniqueBrandArray,
         baggage: uniqueBaggage,
         priceBreakdown,
         transit: transitTimes,
-        //flightAmenities: commonFunctions.getDeviceFeatures(),
+        flightAmenities: commonFunctions.getDeviceFeatures(),
         cityCount,
-        // airPriceData
+        airPriceData
       };
 
       returnData.push(returnObject);
@@ -290,9 +290,56 @@ const asfterSearch = async (req,res) => {
 
     //console.log(JSON.stringify(returnData, null, 2))
 
-    //  console.log(returnData.length, counter)
+     console.log(returnData.length, counter)
 
-    return  res.send({returnData});
+    //  / Function to extract relevant fields for comparison
+     function extractRelevantFields(obj) {
+       return {
+         cityCount: obj.cityCount.map(cityArray => cityArray.map(city => ({
+           marketingFlight: city.marketingFlight
+         })))
+       };
+     }
+     
+     // Function to group objects by their relevant fields
+     function groupObjectsByRelevantFields(data) {
+       const map = new Map();
+       data.forEach(item => {
+         const key = JSON.stringify(extractRelevantFields(item));
+         if (!map.has(key)) {
+           map.set(key, []);
+         }
+         map.get(key).push(item);
+       });
+       return map;
+     }
+     
+     // Group the objects by their relevant fields
+     const groupedMap = groupObjectsByRelevantFields(returnData);
+     
+     // Arrays to store identical and different objects
+     const identicalObjects = [];
+     
+     // Separate identical and different objects
+     groupedMap.forEach((value, key) => {
+       if (value.length > 1) {
+         const [first, ...rest] = value;
+         const identicalGroup = {
+           ...first,
+           seemore: rest
+         };
+         identicalObjects.push(identicalGroup);
+       }
+     });
+     
+     // Return the arrays
+     const result = {
+       identicalObjects: identicalObjects
+     };
+     
+
+return res.send({ result });
+
   } catch (err) {
 
     console.log(err);

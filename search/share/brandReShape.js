@@ -112,8 +112,6 @@ const categorizeDescriptions = (descriptions) => {
     return ignorePhrases.some(phrase => cleanedDescription.includes(cleanText(phrase)));
   };
 
-  console.log(descriptions)
-
   descriptions.forEach(description => {
     if (shouldIgnoreDescription(description)) {
       return; // Skip this description if it contains any ignored phrase

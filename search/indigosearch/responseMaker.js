@@ -272,12 +272,12 @@ const responseMaker = async (req,res) => {
         isGroupFare: false,
         partiallyEligible: false,
         route: body.segmentsList || [],
-        amenities: amenitiesArray,
-        brandCount: uniqueBrandArray.length,
-        brands: uniqueBrandArray,
-        baggage: uniqueBaggage,
-        priceBreakdown,
-        transit: transitTimes,
+        // amenities: amenitiesArray,
+        // brandCount: uniqueBrandArray.length,
+        // brands: uniqueBrandArray,
+        // baggage: uniqueBaggage,
+        // priceBreakdown,
+        // transit: transitTimes,
         //flightAmenities: commonFunctions.getDeviceFeatures(),
         cityCount,
         airPriceData
@@ -291,7 +291,39 @@ const responseMaker = async (req,res) => {
 
     //  console.log(returnData.length, counter)
 
-    return returnData;
+    // Function to check if two objects are deeply equal
+
+
+ 
+
+function deepEqual(obj1, obj2) {
+  return JSON.stringify(obj1) === JSON.stringify(obj2);
+}
+
+
+const identicalObjects = [];
+const differentObjects = [];
+
+// Check for identical and different objects
+for (let i = 0; i < returnData.length; i++) {
+  let isIdentical = true;
+  for (let j = 0; j < returnData.length; j++) {
+      if (i !== j && !deepEqual(returnData[i], returnData[j])) {
+          isIdentical = false;
+          break;
+      }
+  }
+  if (isIdentical) {
+      identicalObjects.push(returnData[i]);
+  } else {
+      differentObjects.push(returnData[i]);
+  }
+  console.log(identicalObjects,differentObjects)
+
+  return {identicalObjects, differentObjects}
+}
+
+ 
   } catch (err) {
 
     console.log(err);

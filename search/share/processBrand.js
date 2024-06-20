@@ -248,7 +248,6 @@ function processBrand( etree,brandElement, fareAttributeData, airPrice) {
 
     const seenBrands = commonFunctions.brandMaker(brandAttribute);
     const feature = commonFunctions.featuredMaker(fareAttributeData);
-
     return {seenBrands, feature};
 }
 

@@ -2,7 +2,6 @@ import getFareData from "./getFareData";
 
 const extractBookingInfo = (etree,pricingInfo = [], passengers = {}) => {
     const desiredBookingInfo = [];
-
     const passengerTypeCode = passengers?.code;
     const passengerType = pricingInfo.findall(`.//air:PassengerType[@Code="${passengerTypeCode}"]`);
     if (passengerType.length > 0) {

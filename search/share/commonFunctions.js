@@ -163,7 +163,6 @@ function extractNumberFromString(string = "") {
 function paxPriceMakers(paxPrice = {}) {
 
     const paxCount = paxPrice?.paxCount
-    console.log(paxPrice)
     const tax = extractNumberFromString(paxPrice?.ApproximateTaxes || "") || 0
     const totalTaxAmount = tax * paxCount
     const baseFare = extractNumberFromString(paxPrice?.ApproximateBasePrice || "") || 0
