@@ -54,4 +54,25 @@ const searchService = async (req, res, next) => {
   }
 };
 
+const fareRule  = async(req,res)=>{
+  const xmlData = fs.readFileSync('response.xml', 'utf8');
+    const etree = et.parse(xmlData);
+
+  const fareRules = etree.findall('.//air:FareRuleLong') || [];
+
+  if (!fareRules || !fareRules?.length) return  []
+
+  if (isIndigo) {
+      const readyFareRules = fareRules.map(rule => {
+          const textContent = rule.text ? rule.text.trim() : '';
+          const textLines = textContent.split('\n').map(line => line.trim()).filter(line => line !== '');
+          const title = textLines.length > 0 ? textLines.shift() : '';
+          const text = textLines.join(' ');
+          return { title, text };
+      });
+
+      return readyFareRules || [];
+  }
+}
+
 export default searchService;

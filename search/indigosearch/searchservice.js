@@ -294,11 +294,11 @@ const asfterSearch = async (req,res) => {
 
     //  / Function to extract relevant fields for comparison
      function extractRelevantFields(obj) {
+      console.log(obj.totalFare)
        return {
-         cityCount: obj.cityCount.map(cityArray => cityArray.map(city => ({
-           marketingFlight: city.marketingFlight
-         })))
+         totalFare: obj.totalFare,
        };
+     
      }
      
      // Function to group objects by their relevant fields
@@ -313,9 +313,14 @@ const asfterSearch = async (req,res) => {
        });
        return map;
      }
-     
-     // Group the objects by their relevant fields
-     const groupedMap = groupObjectsByRelevantFields(returnData);
+// Function to sort objects by totalFare
+function sortByTotalFare(data) {
+  return data.sort((a, b) => a.totalFare - b.totalFare);
+}
+
+// Sort the objects
+const sortedData = sortByTotalFare(returnData);
+     const groupedMap = groupObjectsByRelevantFields(sortedData);
      
      // Arrays to store identical and different objects
      const identicalObjects = [];
@@ -331,6 +336,10 @@ const asfterSearch = async (req,res) => {
          identicalObjects.push(identicalGroup);
        }
      });
+   
+  
+  
+    
      
      // Return the arrays
      const result = {
@@ -338,7 +347,7 @@ const asfterSearch = async (req,res) => {
      };
      
 
-return res.send({ result });
+return res.send({ result:result });
 
   } catch (err) {
 
@@ -347,6 +356,82 @@ return res.send({ result });
   }
 };
 
+
+
+const fareRule = async (req, res) => {
+  try {
+    const xmlData = fs.readFileSync('fareRule.xml', 'utf8');
+    const etree = et.parse(xmlData);
+
+    const fareRules = etree.findall('.//air:FareRuleLong') || [];
+
+    if (!fareRules || !fareRules.length) return res.send([]);
+
+    const fareTypes = [
+      "Regular / Promo - One Way retail",
+      "Return Fare - Applicable for Round-Trip journey",
+      "Family Fare - Applicable on a minimum of 4 pax booked on the same PNR",
+      "Flexi Fare - Unlimited changes 4 Days and Above left for departure for domestic and international sectors. Fare difference applies.",
+      "SME Fare - We’ve got a deal that’ll give our travel partners an edge. Unlock a discounted seat* along with lower change and cancellation fee, when you book for business travellers with SME fares. *T&C apply.",
+      "Lite fare - Applicable for travel without a check-in baggage. Applicable for travel beyond 15 days from the booking date on Domestic and same day on International travel. For a multi-leg/return journey, Lite Fare will be available only if it is available and selected on each of the individual legs.",
+      "Corporate / Coupon Fare - Available for contracted Corporate Customers only. Allows unlimited flexibility to change / cancel, extra hand-baggage allowance, complimentary seat and meal (1 food item & 1 beverage).",
+      "Super 6E Fare - The “Super 6E” fare will include an extra 10kg baggage allowance, free seat selection including XL seat, meal / snack combo, check-in first and get your bags before anyone else, anytime boarding, delayed and lost baggage protection service and reduced change and cancellation fee, as well as no convenience fee."
+    ];
+
+    const keywords = ["Baggage Conditions", "Change Fee / Cancel Fee", "Change Fee", "Cancellation Fee", "Cancellation Fee:", "Baggage Conditions:", "Change Fee:"];
+    const ignoreTexts = ["Terms and Conditions IndiGo Fares Terms & Conditions"];
+    const categorizedFareRules = {};
+
+    let currentFareType = '';
+    let currentCategory = '';
+    let details = [];
+
+    fareRules.forEach(rule => {
+      const textContent = rule.text ? rule.text.trim() : '';
+      const textLines = textContent.split('\n').map(line => line.trim()).filter(line => line !== '');
+
+      textLines.forEach(line => {
+        if (ignoreTexts.includes(line)) return; // Ignore specific text
+
+        if (fareTypes.includes(line)) {
+          currentFareType = line;
+          currentCategory = '';
+          details = [];
+          if (!categorizedFareRules[currentFareType]) {
+            categorizedFareRules[currentFareType] = {};
+          }
+        } else if (keywords.includes(line)) {
+          currentCategory = line;
+        } else if (currentFareType && currentCategory) {
+          if (!categorizedFareRules[currentFareType][currentCategory]) {
+            categorizedFareRules[currentFareType][currentCategory] = [];
+          }
+          categorizedFareRules[currentFareType][currentCategory].push(line);
+        }
+      });
+    });
+
+    // Prepare response format
+    const readyFareRules = Object.keys(categorizedFareRules).map(fareType => {
+      const rulesForType = Object.keys(categorizedFareRules[fareType]).map(category => {
+        return {
+          Title: category,
+          Text: categorizedFareRules[fareType][category].join(' ')
+        };
+      });
+      return { rulesForType };
+    });
+
+    return res.send({ readyFareRules });
+  } catch (error) {
+    console.error('Error in parsing fare rules:', error);
+    return res.status(500).send({ error: 'Error in parsing fare rules' });
+  }
+};
+
+
+
 export const  asfterSearchService ={
-  asfterSearch
+  asfterSearch,
+  fareRule
 }
