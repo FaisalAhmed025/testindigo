@@ -9,7 +9,6 @@ import commonFunctions from './share/commonFunctions';
 const searchService = async (req, res, next) => {
   try {
     const body = req.body;
-
     const searchResults = [];
     const controlCheck = await WingDetails.findOne({
       where: { gdsControlId: req.user.id },

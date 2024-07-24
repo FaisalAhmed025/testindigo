@@ -288,54 +288,97 @@ const asfterSearch = async (req,res) => {
     }
 
 
-    //console.log(JSON.stringify(returnData, null, 2))
+    // //console.log(JSON.stringify(returnData, null, 2))
 
-     console.log(returnData.length, counter)
+    //  console.log(returnData.length, counter)
 
-    //  / Function to extract relevant fields for comparison
-     function extractRelevantFields(obj) {
-      console.log(obj.totalFare)
-       return {
-         totalFare: obj.totalFare,
-       };
+    // //  / Function to extract relevant fields for comparison
+    //  function extractRelevantFields(obj) {
+    //   console.log(obj.totalFare)
+    //    return {
+    //      totalFare: obj.totalFare,
+    //    };
      
-     }
+    //  }
      
-     // Function to group objects by their relevant fields
-     function groupObjectsByRelevantFields(data) {
-       const map = new Map();
-       data.forEach(item => {
-         const key = JSON.stringify(extractRelevantFields(item));
-         if (!map.has(key)) {
-           map.set(key, []);
-         }
-         map.get(key).push(item);
-       });
-       return map;
-     }
-// Function to sort objects by totalFare
-function sortByTotalFare(data) {
-  return data.sort((a, b) => a.totalFare - b.totalFare);
-}
+//      // Function to group objects by their relevant fields
+//      function groupObjectsByRelevantFields(data) {
+//        const map = new Map();
+//        data.forEach(item => {
+//          const key = JSON.stringify(extractRelevantFields(item));
+//          if (!map.has(key)) {
+//            map.set(key, []);
+//          }
+//          map.get(key).push(item);
+//        });
+//        return map;
+//      }
+// // Function to sort objects by totalFare
+// function sortByTotalFare(data) {
+//   return data.sort((a, b) => a.totalFare - b.totalFare);
+// }
 
-// Sort the objects
-const sortedData = sortByTotalFare(returnData);
-     const groupedMap = groupObjectsByRelevantFields(sortedData);
+// // Sort the objects
+// const sortedData = sortByTotalFare(returnData);
+//      const groupedMap = groupObjectsByRelevantFields(sortedData);
      
-     // Arrays to store identical and different objects
-     const identicalObjects = [];
+//      // Arrays to store identical and different objects
+//      const identicalObjects = [];
      
-     // Separate identical and different objects
-     groupedMap.forEach((value, key) => {
-       if (value.length > 1) {
-         const [first, ...rest] = value;
-         const identicalGroup = {
-           ...first,
-           seemore: rest
-         };
-         identicalObjects.push(identicalGroup);
-       }
-     });
+//      // Separate identical and different objects
+//      groupedMap.forEach((value, key) => {
+//        if (value.length > 1) {
+//          const [first, ...rest] = value;
+//          const identicalGroup = {
+//            ...first,
+//            seemore: rest
+//          };
+//          identicalObjects.push(identicalGroup);
+//        }
+//      });
+
+
+
+
+   //  / Function to extract relevant fields for comparison
+   function extractRelevantFields(obj) {
+    return {
+      cityCount: obj.cityCount.map(cityArray => cityArray.map(city => ({
+        marketingFlight: city.marketingFlight
+      })))
+    };
+  }
+
+  // Function to group objects by their relevant fields
+  function groupObjectsByRelevantFields(data) {
+    const map = new Map();
+    data.forEach(item => {
+      const key = JSON.stringify(extractRelevantFields(item));
+      if (!map.has(key)) {
+        map.set(key, []);
+      }
+      map.get(key).push(item);
+    });
+    return map;
+  }
+
+  // Group the objects by their relevant fields
+  const groupedMap = groupObjectsByRelevantFields(returnData);
+
+  // Arrays to store identical and different objects
+  const identicalObjects = [];
+
+  // Separate identical and different objects
+  groupedMap.forEach((value, key) => {
+    if (value.length > 1) {
+      const [first, ...rest] = value;
+      const identicalGroup = {
+        ...first,
+        seemore: rest
+      };
+      identicalObjects.push(identicalGroup);
+    }
+  });
    
   
   
@@ -419,7 +462,7 @@ const fareRule = async (req, res) => {
           Text: categorizedFareRules[fareType][category].join(' ')
         };
       });
-      return { rulesForType };
+      return {rulesForType };
     });
 
     return res.send({ readyFareRules });
@@ -428,6 +471,62 @@ const fareRule = async (req, res) => {
     return res.status(500).send({ error: 'Error in parsing fare rules' });
   }
 };
+
+
+// const fareRule = async (req, res) => {
+//   const xmlData = fs.readFileSync('fareRule.xml', 'utf8');
+//   const etree = et.parse(xmlData);
+
+//   const fareRules = etree.findall('.//air:FareRuleLong') || [];
+
+//   if (!fareRules || !fareRules.length) return res.send([]);
+
+//   const keywords = ["Baggage Conditions", "Change Fee / Cancel Fee", "Change Fee", "Cancellation Fee", "Cancellation Fee:", "Baggage Conditions:", "Change Fee:"];
+//   const ignoreTexts = ["Terms and Conditions IndiGo Fares Terms & Conditions", "Regular / Promo - One Way retail"];
+//   const categorizedFareRules = {};
+
+//   fareRules.forEach(rule => {
+//     const textContent = rule.text ? rule.text.trim() : '';
+//     const textLines = textContent.split('\n').map(line => line.trim()).filter(line => line !== '');
+
+//     let currentCategory = '';
+//     let details = new Set();
+
+//     textLines.forEach(line => {
+//       if (ignoreTexts.includes(line)) return; // Ignore specific text
+
+//       if (keywords.includes(line)) {
+//         if (currentCategory && details.size) {
+//           if (!categorizedFareRules[currentCategory]) {
+//             categorizedFareRules[currentCategory] = new Set();
+//           }
+//           details.forEach(detail => categorizedFareRules[currentCategory].add(detail));
+//           details.clear();
+//         }
+//         currentCategory = line;
+//       } else {
+//         details.add(line);
+//       }
+//     });
+
+//     if (currentCategory && details.size) {
+//       if (!categorizedFareRules[currentCategory]) {
+//         categorizedFareRules[currentCategory] = new Set();
+//       }
+//       details.forEach(detail => categorizedFareRules[currentCategory].add(detail));
+//     }
+//   });
+
+//   // Mapping the categories with the text
+//   const readyFareRules = Object.keys(categorizedFareRules).map(category => {
+//     return {
+//      Title: category,
+//       text: Array.from(categorizedFareRules[category]).join(' ')
+//     };
+//   });
+
+//   return res.send({ readyFareRules }) || [];
+// };
 
 
 

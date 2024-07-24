@@ -1,5 +1,5 @@
-<air:AirFareRulesRsp TraceId="Fly-Far-Tech" TransactionId="6DE64B680A0EE1115FD2D8A5C6B13AC4" ResponseTime="2585" xmlns:air="http://www.travelport.com/schema/air_v52_0">
-  <air:FareRule FareInfoRef="KvABdBKDuDKAI4LgRKAAAA==" ProviderCode="ACH" SupplierCode="6E">
+<air:AirFareRulesRsp TraceId="Fly-Far-Tech" TransactionId="72100C430A0EE017459C821060CA1E1E" ResponseTime="2691" xmlns:air="http://www.travelport.com/schema/air_v52_0">
+  <air:FareRule FareInfoRef="lX2BdBcDuDKAV/CYFNAAAA==" ProviderCode="ACH" SupplierCode="6E">
     <air:FareRuleLong Category="1000" Type="RULE">Terms and Conditions IndiGo Fares Terms &amp; Conditions
 
 Regular / Promo - One Way retail
@@ -15,10 +15,9 @@ International - Respective Change / cancellation charges (click the link below) 
 
 Click here for Change / Cancellation charges:  
 
-
 Super 6E Fare - The âЂœSuper 6EâЂť fare will include an extra 5kg baggage allowance, free seat selection including XL seat, meal / snack combo, and reduced change and cancellation fee, as well as no convenience fee.
        
-        Baggage Conditions
+       Baggage Conditions
        Check-in Baggage Allowance: An extra 5KG baggage allowance on regular baggage allowance.
        Hand Baggage Allowance:  7 Kg. (including ladies bag and laptop bag.)
 
@@ -102,8 +101,6 @@ International Travel : The cancellation fee will be INR 999 for cancellation if 
 
 
 Click here for Change / Cancellation charges: 
-
-
 Lite fare - Applicable for travel without a check-in baggage. Applicable for travel beyond 15 days from the booking date on Domestic and same day on International travel. For a multi-leg/return journey, Lite Fare will be available only if it is available and selected on each of the individual legs.
 
 Baggage Conditions
