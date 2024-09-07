@@ -19,7 +19,7 @@ function getFareData(etree, key = "", passengers = {}) {
     const brandElement = etree.find(`.//air:BrandList/air:Brand[@BrandID='${fareBrandAttribute?.BrandID}']`, etree.namespaces);
 
 
-    console.log(brandElement)
+    // console.log(brandElement)
 
     // console.log(fareBrandAttribute?.BrandID, brandElement)
     // brand raw data

@@ -86,8 +86,23 @@ const asfterSearch = async (req,res) => {
         const paxPrice = commonFunctions.attributeToObject(info?.attrib);
 
 
+        const airpreicetax = pricePoint.findall('.//air:TaxInfo')
+        // console.log("airpreicetax", airpreicetax)
         // get booking segment related data
-
+        
+        airpreicetax.forEach((element) => {
+          const category = element.attrib.Category;
+          const amount = element.attrib.Amount;
+          const key = element.attrib.Key;
+          const supplierCode = element.attrib.SupplierCode;
+      
+          console.log(`Category: ${category}`);
+          console.log(`Amount: ${amount}`);
+          console.log(`Key: ${key}`);
+          console.log(`Supplier Code: ${supplierCode}`);
+          console.log('-------------------');
+      });
+      
 
         const passengers = {};
         passengerTypes.forEach((passenger, index) => {
@@ -136,7 +151,7 @@ const asfterSearch = async (req,res) => {
         paxPrice.paxCount = passengers.paxCount;
 
 
-        const priceBreak = commonFunctions.paxPriceMakers(paxPrice);
+        const priceBreak = commonFunctions.paxPriceMakers(paxPrice,airpreicetax);
 
         //console.log(priceBreak)
         priceBreakdown.push(priceBreak);

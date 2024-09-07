@@ -160,35 +160,75 @@ function extractNumberFromString(string = "") {
     return number ? parseInt(number[0]) : 0;
   }
 
-function paxPriceMakers(paxPrice = {}) {
+// function paxPriceMakers(paxPrice = {}) {
 
-    const paxCount = paxPrice?.paxCount
-    const tax = extractNumberFromString(paxPrice?.ApproximateTaxes || "") || 0
-    const totalTaxAmount = tax * paxCount
-    const baseFare = extractNumberFromString(paxPrice?.ApproximateBasePrice || "") || 0
-    const totalBaseFare = baseFare * paxCount
-    const fees = extractNumberFromString(paxPrice?.ApproximateFees || "")
-    const totalfees = fees * paxCount
-    const price = extractNumberFromString(paxPrice?.ApproximateTotalPrice || "") || 0
-    const totalprice = price * paxCount
-
-
+//     const paxCount = paxPrice?.paxCount
+//     const tax = extractNumberFromString(paxPrice?.ApproximateTaxes || "") || 0
+//     const totalTaxAmount = tax * paxCount
+//     const baseFare = extractNumberFromString(paxPrice?.ApproximateBasePrice || "") || 0
+//     const totalBaseFare = baseFare * paxCount
+//     const fees = extractNumberFromString(paxPrice?.ApproximateFees || "")
+//     const totalfees = fees * paxCount
+//     const price = extractNumberFromString(paxPrice?.ApproximateTotalPrice || "") || 0
+//     const totalprice = price * paxCount
 
 
- return {
-   paxType: paxPrice.code || "",
-   paxCount,
-   currency: extractAlphabeticPart(paxPrice?.ApproximateTotalPrice || ""),
-   baseFare,
-   totalBaseFare,
-   tax,
-   totalTaxAmount,
-   totalAmount: totalprice,
-   discount: 0,
-   otherCharges: 0,
-   serviceFee: totalfees,
- }
+
+
+//  return {
+//    paxType: paxPrice.code || "",
+//    paxCount,
+//    currency: extractAlphabeticPart(paxPrice?.ApproximateTotalPrice || ""),
+//    baseFare,
+//    totalBaseFare,
+//    tax,
+//    totalTaxAmount,
+//    totalAmount: totalprice,
+//    discount: 0,
+//    otherCharges: 0,
+//    serviceFee: totalfees,
+//  }
+// }
+
+
+function paxPriceMakers(paxPrice = {}, airpreicetax = []) {
+    const paxCount = paxPrice?.paxCount;
+    const tax = extractNumberFromString(paxPrice?.ApproximateTaxes || "") || 0;
+    const totalTaxAmount = tax * paxCount;
+    const baseFare = extractNumberFromString(paxPrice?.ApproximateBasePrice || "") || 0;
+    const totalBaseFare = baseFare * paxCount;
+    const fees = extractNumberFromString(paxPrice?.ApproximateFees || "") || 0;
+    const totalfees = fees * paxCount;
+    const price = extractNumberFromString(paxPrice?.ApproximateTotalPrice || "") || 0;
+    const totalprice = price * paxCount;
+
+    // Collect tax details from airpreicetax
+    const allTax = airpreicetax.map((element) => {
+        return {
+            Code: element.attrib.Category,
+            currency:'BDT',
+            amount:  extractNumberFromString(element.attrib.Amount),
+        };
+    });
+
+    // Add the tax details to the price breakdown
+   
+    return {
+        paxType: paxPrice.code || "",
+        paxCount,
+        currency: extractAlphabeticPart(paxPrice?.ApproximateTotalPrice || ""),
+        baseFare,
+        totalBaseFare,
+        tax,
+        totalTaxAmount,
+        totalAmount: totalprice,
+        discount: 0,
+        otherCharges: 0,
+        serviceFee: totalfees,
+        allTax // Include tax details in the returned result
+    };
 }
+
 
 
 function segmentPriceMaker(segmentPrice) {

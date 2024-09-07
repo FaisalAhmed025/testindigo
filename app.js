@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 app.use('/api/v1/indigo', onewayRouter)
 
-app.use('/api/v1/search/indigo', onewayRouter)
+// app.use('/api/v1/search/indigo', onewayRouter)
 
 app.get('/', (req, res, next) => {
   res.send('Welcome to Indigo Api Integration');

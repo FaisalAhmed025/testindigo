@@ -28,15 +28,13 @@ const responseMaker = async (req,res) => {
 
     const airPricingSolutions = etree.findall('.//air:AirPricingSolution');
 
+    console.log(airPricingSolutions)
+
 
 // determine journey route
     const routeList = etree.findall('air:RouteList/air:Route');
 
     const routes = commonFunctions.extractRoutes(routeList);
-    //console.log(routes);
-
-
-    //console.log(tripType)
 
     let counter = 0;
 
@@ -63,20 +61,24 @@ const responseMaker = async (req,res) => {
       let processedPassenger = false;
       const airPrice = commonFunctions.attributeToObject(pricePoint?.attrib);
 
-//console.log(airPrice)
-//todo it should in the loop
       const children = pricePoint._children;
 
       children.filter(element => element.tag === 'air:Journey');
       const journeyElements = pricePoint.findall('.//air:Journey');
 
 
+
       const pricingInfos = pricePoint.findall('.//air:AirPricingInfo');
+
+
+
 
       let isRefundable = pricingInfos[0]?.attrib?.Refundable === 'true' ? Constants.REFUNDABLE : Constants.NONREFUNDABLE;
       const carrier = pricingInfos[0]?.attrib?.PlatingCarrier || '';
 
 //console.log(isRefundable, carrier)
+
+// console.log("pricingInfos",pricingInfos)
 
 
       pricingInfos.forEach(info => {
@@ -84,6 +86,7 @@ const responseMaker = async (req,res) => {
         const passengerTypes = info.findall('.//air:PassengerType');
         const paxPrice = commonFunctions.attributeToObject(info?.attrib);
 
+     
 
         // get booking segment related data
 
@@ -98,14 +101,14 @@ const responseMaker = async (req,res) => {
 
         // get short fare rules  ChangePenalty and  CancelPenalty
         const changePenalty = info.findall('.//air:ChangePenalty');
-
         const cancelPenalty = info.findall('.//air:CancelPenalty');
 
         if (passengers.code === 'ADT' && isRefundable === Constants.REFUNDABLE) {
 
-
           // console.log({cancelPenalty, changePenalty})
           const passengerPrice = commonFunctions.extractNumberFromString(paxPrice.ApproximateTotalPrice || '') || 0;
+
+
 
           structureFareRule = commonFunctions.createPenaltyObjects(changePenalty, cancelPenalty, isRefundable, passengerPrice);
           //console.log(penaltyObjects);
@@ -168,8 +171,6 @@ const responseMaker = async (req,res) => {
             //  console.log(fareBrandAttribute)
             fareAttributeData.BrandTier = fareBrandAttribute.BrandTier;
             if (!commonFunctions.isEmptyObject(brandAttribute)) {
-
-
               let { seenBrands, feature } = processBrand(etree, brandElement, fareAttributeData, airPrice);
               featureArray.push(feature);
               seenBrands.feature = featureArray;
@@ -213,7 +214,6 @@ const responseMaker = async (req,res) => {
           /*  processedPassenger = true;
           }*/
 
-
           //  fareInfoRefs.push(key);
         });
 
@@ -232,6 +232,7 @@ const responseMaker = async (req,res) => {
 
 
       const uniqueBrandArray = getUniqueBrand(brandArray, baggage);
+      // console.log(brandArray)
 // Filter out null entries
 
 //console.log(JSON.stringify(uniqueBrandArray, null, 2))
@@ -272,13 +273,13 @@ const responseMaker = async (req,res) => {
         isGroupFare: false,
         partiallyEligible: false,
         route: body.segmentsList || [],
-        // amenities: amenitiesArray,
-        // brandCount: uniqueBrandArray.length,
-        // brands: uniqueBrandArray,
-        // baggage: uniqueBaggage,
-        // priceBreakdown,
-        // transit: transitTimes,
-        //flightAmenities: commonFunctions.getDeviceFeatures(),
+        amenities: amenitiesArray,
+        brandCount: uniqueBrandArray.length,
+        brands: uniqueBrandArray,
+        baggage: uniqueBaggage,
+        priceBreakdown,
+        transit: transitTimes,
+        flightAmenities: commonFunctions.getDeviceFeatures(),
         cityCount,
         airPriceData
       };
@@ -318,7 +319,7 @@ for (let i = 0; i < returnData.length; i++) {
   } else {
       differentObjects.push(returnData[i]);
   }
-  console.log(identicalObjects,differentObjects)
+  // console.log(identicalObjects,differentObjects)
 
   return {identicalObjects, differentObjects}
 }
